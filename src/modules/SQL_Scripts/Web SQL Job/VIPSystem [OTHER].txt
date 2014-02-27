@@ -1,0 +1,53 @@
+//##############################################//
+// -> Effect Web                                //
+// -> Powered by Erick-Master                   //
+// -> CTM TEAM Softwares                        //
+// -> www.ctmts.com.br                          //
+//##############################################//
+
+-- Sistema de Time VIP
+-- Apenas se o VIP não estiver na CTM_WebVIP, caso contrario, apenas rode a query "VIPSystem [CTM_WebVIP]"
+-- Siga as instruções abaixo:
+
+Crie uma JOB com o nome "CTM_VIPSystem".
+
+-- JOB Step:
+-- Step Name: EW_VIPSystem
+--- Abaixo segue o comando que deve ser adicionado na Step.
+--- Edite as seguintes informações conforme a descrição:
+
+* {0x00} - DataBase das contas VIP (Padrão -> MuOnline)
+* {0x01} - Table das contas VIP (Padrão -> MEMB_INFO)
+* {0x02} - coluna dos tipos de VIP (Padrão -> vip)
+* {0x03} - Coluna do tempo de VIP [Time Stamp] (Padrão -> VIP_Time)
+* {0x04} - Coluna do inicio de VIP [Time Stamp] (Padrão -> VIP_Begin)
+* {0x05} - Coluna de numeros inteiros [Dias de VIP] (Padrão -> VIP_Integer / creditos)
+
+-> Command:
+
+UPDATE {0x00}.dbo.{0x01} SET {0x05} = {0x05} - 1 WHERE {0x02} > 0 AND {0x05} > 0;
+UPDATE {0x00}.dbo.{0x01} SET {0x02} = 0, {0x03} = 0, {0x04} = 0, {0x05} = 0 WHERE {0x02} > 0 AND {0x05}  < 1;
+
+-- JOB Schedules
+-- Schedules Name: Time_Command
+
+* Occurs : Daily - Every 1 day(s)
+* Daily frequency : Occurs every: 24 [Hour(s)]
+** Starting at 00:00:00
+** Ending at: 23:59:59
+* Duration: No end date
+* OK
+
+-> Pronto, agora o VIP será retirado automáticamente.
+
+--------------------------------------------------------------------------------------
+Caso Tenha duvidas entre em contato:
+
+E-Mail/MSN: erick-master@ctmts.com.br
+Skype: erick-master.am
+Telefone: (31) 9702-2076
+
+Att: Erick-Master - Desenvolvedor do Web Site
+
+CTM TEAM Softwares
+www.ctmts.com.br

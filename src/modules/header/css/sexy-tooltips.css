@@ -1,0 +1,112 @@
+div.sexy-tooltip .tooltip .h1
+{
+	font-size: 120%;
+}
+div.sexy-tooltip .tooltip-tl {
+	color: #000;
+	background: url(../../../images/sexy-tooltips/tl.png) 0 bottom no-repeat;
+	position: relative; /* for close button */
+}
+
+div.sexy-tooltip .tooltip-tr {
+	color: #000;
+	padding: 0px 15px 0px 15px;
+	background: url(../../../images/sexy-tooltips/tr.png) 100% bottom no-repeat;
+}
+
+div.sexy-tooltip .tooltip-t {
+	color: #000;
+	background: url(../../../images/sexy-tooltips/t.png) 0 bottom repeat-x;
+	height:25px;
+}
+
+div.sexy-tooltip .tooltip-l {
+	color: #000;
+	background: url(../../../images/sexy-tooltips/l.png) 0 0 repeat-y;
+}
+
+div.sexy-tooltip .tooltip-r {
+	color: #000;
+	padding: 0px 15px 0px 15px;
+	background: url(../../../images/sexy-tooltips/r.png) 100% 0 repeat-y;
+}
+
+div.sexy-tooltip .tooltip-m {
+	color: #000;
+	background: #ffffff;
+	overflow: hidden;
+	width:100%;
+}
+
+div.sexy-tooltip .tooltip-bl {
+	color: #000;
+	background: url(../../../images/sexy-tooltips/bl.png) 0 0 no-repeat;
+}
+
+div.sexy-tooltip .tooltip-br {
+	color: #000;
+	padding: 0px 15px 0px 15px;
+	background: url(../../../images/sexy-tooltips/br.png) 100% 0 no-repeat;
+}
+
+div.sexy-tooltip .tooltip-b {
+	color: #000;
+	background: url(../../../images/sexy-tooltips/b.png) 0 0 repeat-x;
+	height:25px;
+}
+
+
+div.sexy-tooltip .tooltip-b .tooltip-c-arrow {
+	color: #000;
+	background: url(../../../images/sexy-tooltips/bca.png) 50% 0 no-repeat;
+	height:25px;
+}
+
+div.sexy-tooltip .tooltip-b .tooltip-l-arrow {
+	color: #000;
+	background: url(../../../images/sexy-tooltips/bla.png) 0 0 no-repeat;
+	height:25px;
+}
+
+div.sexy-tooltip .tooltip-b .tooltip-r-arrow {
+	color: #000;
+	background: url(../../../images/sexy-tooltips/bra.png) 100% 0 no-repeat;
+	height:25px;
+}
+
+div.sexy-tooltip .tooltip-t .tooltip-c-arrow {
+	color: #000;
+	background: url(../../../images/sexy-tooltips/tca.png) 50% 0 no-repeat;
+	height:25px;
+}
+
+div.sexy-tooltip .tooltip-t .tooltip-l-arrow {
+	color: #000;
+	background: url(../../../images/sexy-tooltips/tla.png) 0 0 no-repeat;
+	height:25px;
+}
+
+div.sexy-tooltip .tooltip-t .tooltip-r-arrow {
+	color: #000;
+	background: url(../../../images/sexy-tooltips/tra.png) 100% 0 no-repeat;
+	height:25px;
+}
+
+
+div.sexy-tooltip a.tooltip-close {
+	color: #000;
+  display:block;
+  overflow:hidden;
+	position: absolute;
+	top: 21px;
+	right: 10px;
+	width: 18px;
+	height: 18px;
+	background: url(../../../images/sexy-tooltips/close.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+div.sexy-tooltip a.tooltip-close span {
+	color: #000;
+  display:none;
+}
