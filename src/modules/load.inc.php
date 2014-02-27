@@ -34,7 +34,7 @@ define("Product", "Effect Web");
 
 # Version
 $version = new Version();
-$version->setVersion($version, $full_version);
+$version->setVersion("v1.8.5", "v1.8.5 Finish Edition");
 $version->compareVersions(constant("Update_Key"), true);
 
 # Login
