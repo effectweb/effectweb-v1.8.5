@@ -1,4 +1,4 @@
-effectweb-v1.8.4
+Effect Web v1.8.5 Finish Edition
 ================
 
 Código fonte da Effect Web v1.8.4 liberado somente para os clientes.
