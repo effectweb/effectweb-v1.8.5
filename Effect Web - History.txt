@@ -1,0 +1,39 @@
+Effect Web v1.0 Begin Development - 05/11/2010
+Effect Web v1.0 Beta Edition - 29/12/2010
+Effect Web v1.0 R2 Beta Edition - 29/12/2010
+Effect Web v1.0 R3 Beta Edition - 30/12/2010
+Effect Web v1.1 Beta Edition - 18/01/2011
+Effect Web v1.3 Express Edition - 21/01/2011
+Effect Web v1.3 R3 Express Edition - 22/01/2011
+Effect Web v1.4 Project Edition - 13/02/2011
+Effect Web v1.5 Black Edition - 19/02/2011
+Effect Web v1.5.2 Black Edition - 21/02/2011
+Effect Web v1.5.3 Black Edition - 22/02/2011
+Effect Web v1.5.4 Black Edition - 23/02/2011
+Effect Web v1.5.5 Black Edition - 25/02/2011
+Effect Web v1.6 Prime Edition - 05/03/2011
+Effect Web v1.6.2 Prime Edition - 04/05/2011
+Effect Web v1.7 Finish Edition - 30/06/2011
+Effect Web v1.7.1 Finish Edition - 01/07/2011
+Effect Web v1.7.2 Finish Edition - 05/07/2011
+Effect Web v1.7.3 Finish Edition - 25/07/2011
+Effect Web v1.7.4 Finish Edition - 27/07/2011
+Effect Web v1.7.5 Finish Edition - 28/07/2011
+Effect Web v1.7.6 Finish Edition - 24/09/2011
+Effect Web v1.7.7 Finish Edition - 12/10/2011
+Effect Web v1.7.8 Finish Edition - 09/11/2011
+Effect Web v1.7.9 Finish Edition - 25/11/2011
+Effect Web v1.7.10 Finish Edition - 11/12/2011
+Effect Web v1.7.11 Finish Edition - 07/02/2012
+Effect Web v1.7.12 Finish Edition - 13/03/2012
+Effect Web v1.7.13 Finish Edition - 15/03/2012
+Effect Web v1.7.14 Finish Edition - 26/04/2012
+Effect Web v1.7.15 Finish Edition - 30/04/2012
+Effect Web v1.7.16 Finish Edition - 12/06/2012
+Effect Web v1.7.17 Finish Edition - 13/06/2012
+Effect Web v1.8.0 Finish Edition - 24/08/2012
+Effect Web v1.8.1 Finish Edition - 19/10/2012
+Effect Web v1.8.2 Finish Edition - 24/10/2012
+Effect Web v1.8.3 Finish Edition - 05/11/2012
+Effect Web v1.8.4 Finish Edition - 22/11/2012
+Effect Web v1.8.5 Finish Edition - 31/08/2013

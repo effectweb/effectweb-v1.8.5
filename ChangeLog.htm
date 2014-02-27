@@ -1,0 +1,1529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta http-equiv="reply-to" content="mailto:erick-master@ctmts.com.br" />
+<meta name="description" content="Full ChangeLog - Effect Web v1.8.x" />
+<meta name="author" content="Erick-Master" />
+<meta name="keywords" content="CTM TEAM Softwares - www.ctmts.com.br" />
+<title>ChangeLog: Effect Web v1.8.5</title>
+
+<style type="text/css" title="File ChangeLog Style">
+body
+{
+	background-color: #F3F3F3;
+	color: #000;
+}
+h3
+{
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px solid #333333;
+	height: 18px;
+	margin-top: 10px;
+	margin: 0;
+}
+a 
+{
+	text-decoration:none;
+	outline:none;
+	color: #000;
+}
+a:hover 
+{
+	text-decoration: none;
+	color: #5fa0e4;
+}
+fieldset
+{
+	background-color: #E6E6E6;
+	border: 1px solid #000;
+}
+legend
+{
+	color: #000;
+    font-size:13px;
+    font-family: sans-serif;
+    font-weight: bold;
+	height: 18px;
+	margin-top: 10px;
+	margin: 0;
+}
+input[type="button"] 
+{
+	padding: 2.5px 5px;
+	font:   bold 11px Tahoma, Calibri, Verdana, Geneva, sans-serif;
+	border:1px solid #a8a8a8;
+	color:#424242;
+	background:#e9e9e9 repeat-x top left;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+}
+input[type="button"]:hover
+{
+	cursor: pointer;
+	background: #efefef;
+	color: #424242;
+
+}
+.location
+{
+    font-size: 12px;
+    font-family: sans-serif;  
+    color: green;
+}
+blockquote, #quote
+{
+	color: #C00;
+	margin: 5px 0;
+	padding: 5px;
+	background-color: #DBDBDB;
+	margin-bottom: 15px;
+	border: 1px solid #033;
+}
+blockquote string
+{
+	color: #0000BB;
+}
+blockquote value
+{
+	color: #DD0000;
+}
+blockquote num
+{
+	color: red;
+}
+blockquote quote
+{
+	color: #007700;
+}
+blockquote comment
+{
+	color: #FF8000;
+}
+#update_key
+{
+	background-color: #FAFAFA;	
+}
+#update_key key
+{
+	color: #D94A26; 
+	font-weight: bold;
+}
+php
+{
+    font-size: 12px;
+    font-family: sans-serif;  
+    color: red;
+}
+prefix
+{
+	color: #F60;
+}
+
+</style>
+<script type="text/javascript">
+function Element_Hidden(element)
+{
+    if(document.getElementById(element).style.display == 'none')
+    {                                                               
+        document.getElementById(element).style.display = 'block';
+    }
+    else
+    {
+        document.getElementById(element).style.display = 'none';
+    }
+}
+</script>
+</head>
+
+<body>
+<a target="_blank" href="http://www.ctmts.com.br">
+<img src="http://images.ctmts.com/ctmteam.png" width="376" height="87" border="0" /></a>
+<!------------------------------ Effect Web Information ------------------------------>
+<fieldset>
+<legend>Effect Web v1.8.4 Finish Edition</legend>
+<pre> -- Settings.php <span class="location">[100%]</span>
+ -- Terms.txt <span class="location">[100%]</span>
+
+ -- Template System <span class="location">[100%]</span>
+ -- CronJob System <span class="location">[100%]</span>
+ -- Raffle System <span class="location">[100%]</span>
+ -- Suporte à MD5 <span class="location">[100%]</span>
+
+ -- Lista de Servidores <span class="location">[100%]</span>
+ -- Sistema de VIP compativel com todos os GameServers <span class="location">[100%]</span>
+ -- Suporte de 2 a 5 Tipos de VIP <span class="location">[100%]</span>
+ -- Suporte de 1 a 3 Tipos de Moedas <span class="location">[100%]</span>
+ -- Suporte a vers&otilde;es de 0.97 a Season 6 EP3 <span class="location">[100%]</span>
+ -- Suporte ao ENCGames Season 6 <span class="location">[100%]</span>
+ -- Suporte ao X-Team Season 4/5 <span class="location">[100%]</span>
+ -- Suporte ao X-Team Season 6 EP1 <span class="location">[100%]</span>
+ -- Suporte ao X-Team Season 6 EP2 <span class="location">[100%]</span>
+ -- Suporte ao X-Team Season 6 EP3 <span class="location">[100%]</span>
+ -- Módulo PagSeguro com retorno automático <span class="location">[100%]</span>
+ -- Sistema de links de referência (divulgação) <span class="location">[100%]</span>
+
+ -- Suporte a DataBase Me_MuOnline
+ -- Checagem de conexão a cada 2 horas <span class="location">[100%]</span>
+<br> -- Enquete <span class="location">[100%]</span>
+ -- Recuperar Senha <span class="location">[100%]</span>
+ -- Record Online
+  --- Record Geral <span class="location">[100%]</span>
+  --- Record Diario <span class="location">[100%]</span>
+<br> -- Home <span class="location">[100%]</span>
+  --- Ultimas Notícias <span class="location">[100%]</span>
+  --- Ultimas Notícias do Fórum <span class="location">[100%]</span>
+   ---- Suporte a Invision Power Board (IPB)
+   ---- Suporte a vBulltin (vB)
+   ---- Suporte a phpBB
+   ---- Suporte a Simple Machines Forum (SMF)
+  --- Aviso Importante <span class="location">[100%]</span>
+  --- Castle Siege <span class="location">[100%]</span>
+  --- Top Master Reset / Resets <span class="location">[100%]</span>
+  --- Top Resets Diarios / Semanais / Mensais <span class="location">[100%]</span>
+  --- Top PK/Hero <span class="location">[100%]</span>
+  --- Top Guilds <span class="location">[100%]</span>
+  --- ScreenShots recentes <span class="location">[100%]</span>
+
+ -- Informações <span class="location">[100%]</span>
+  --- Equipe <span class="location">[100%]</span>
+  --- Termos / Regras <span class="location">[100%]</span>
+ 
+ -- Cadastro <span class="location">[100%]</span>
+  --- Requerimento de Confirmação por E-Mail
+  --- Bônus de Item ao Cadastrar (Licença Adicional)
+ 
+ -- Downloads <span class="location">[100%]</span>
+ 
+ -- Rankings <span class="location">[100%]</span>
+  --- Reset Gerais <span class="location">[100%]</span>
+  --- Master Resets <span class="location">[100%]</span>
+  --- Resets Diarios <span class="location">[100%]</span>
+  --- Resets Semanais <span class="location">[100%]</span>
+  --- Resets Mensais <span class="location">[100%]</span>
+  --- Guilds <span class="location">[100%]</span>
+  --- Top PK <span class="location">[100%]</span>
+  --- Top Hero <span class="location">[100%]</span>
+  --- Gens <span class="location">[100%]</span>
+ 
+ -- Contato
+  --- E-Mail / MSN <span class="location">[100%]</span>
+  --- Telefone <span class="location">[100%]</span>
+  --- Tickets <span class="location">[100%]</span>
+  --- Fórum (Link) <span class="location">[100%]</span>
+
+ -- Extras <span class="location">[100%]</span>
+  --- Rede Sociais <span class="location">[100%]</span>
+   ---- Orkut Link <span class="location">[100%]</span>
+   ---- Twitter Link <span class="location">[100%]</span>
+  --- Chat Page <span class="location">[100%]</span>
+  --- <prefix>[Raffle System]</prefix> Players Sorteados <span class="location">[100%]</span>
+  --- Links Extras <span class="location">[100%]</span>
+
+ -- VIPs / Cash <span class="location">[100%]</span>
+
+ -- Shop Link <span class="location">[100%]</span>
+  --- Dropdown <span class="location">[100%]</span>
+
+ -- Fórum Link <span class="location">[100%]</span>
+
+ -- Notícias
+ --- Todas as Notícias <span class="location">[100%]</span>
+ --- Ver Notícia <span class="location">[100%]</span>
+  ---- Comentarios
+  ---- Comentar Notícia
+
+ -- ScreenShots
+  --- Todas as ScreenShots <span class="location">[100%]</span>
+  --- Ver ScreenShot <span class="location">[100%]</span>
+   ---- Lightbox em jQuery para Zoom
+   ---- Descrição da ScreenShot
+   ---- Votar na ScreenShot
+   ---- Comentarios
+   ---- Comentar ScreenShot
+   
+ -- Contas Banidas <span class="location">[100%]</span>
+ -- Personagens Banidos <span class="location">[100%]</span>
+
+ -- Painel de Controle <span class="location">[100%]</span>
+  --- Registro de logs <span class="location">[100%]</span>
+  --- Gerenciar Conta
+   ---- Minha Conta <span class="location">[100%]</span>
+   ---- Alterar Personal ID (PID) <span class="location">[100%]</span>
+   ---- Alterar Dados <span class="location">[100%]</span>
+   ---- Alterar E-Mail <span class="location">[100%]</span>
+   ---- Gerenciar Personagem <span class="location">[100%]</span>
+   ---- Alterar Baú <span class="location">[100%]</span>
+   ---- Reparar Baú <span class="location">[100%]</span>
+   ---- Conexões Recentes <span class="location">[100%]</span>
+   ---- Adicionar ScreenShot <span class="location">[100%]</span>
+   ---- Deletar ScreenShot <span class="location">[100%]</span>
+  --- Divulgação
+   ---- Link de Referência <span class="location">[100%]</span>
+  --- Gerenciar Personagem
+   ---- Resetar Personagem <span class="location">[100%]</span>
+    ----- Reset Acumulativo <span class="location">[100%]</span>
+    ----- Reset Pontuativo <span class="location">[100%]</span>
+   ---- Transferir Resets <span class="location">[100%]</span>
+   ---- Trocar Resets por Cash <span class="location">[100%]</span>
+   ---- Limpar Inventário <span class="location">[100%]</span>
+   ---- Limpar Skills <span class="location">[100%]</span>
+   ---- Resetar Quests <span class="location">[100%]</span>
+   ---- Master Reset <span class="location">[100%]</span>
+   ---- Limpar PK/Hero <span class="location">[100%]</span>
+   ---- Alterar Classe <span class="location">[100%]</span>
+   ---- Alterar Nick <span class="location">[100%]</span>
+   ---- Mover Personagem <span class="location">[100%]</span>
+   ---- Gerenciar Perfil <span class="location">[100%]</span>
+   ---- Gerenciar Imagem
+    ----- Upload de nova Imagem <span class="location">[100%]</span>
+    ----- Remover Imagem <span class="location">[100%]</span>
+   ---- Concertar Pontos <span class="location">[100%]</span>
+    ----- Concertar Pontos negativos
+    ----- Concertar Pontos zerados
+    ----- Concertar Pontos acima do Maximo
+   ---- Resetar Pontos <span class="location">[100%]</span>
+   ---- Distribuir Pontos <span class="location">[100%]</span>
+   ---- Limpar Personagem
+    ----- Limpar Inventário <span class="location">[100%]</span>
+    ----- Limpar Skills <span class="location">[100%]</span>
+    ----- Limpar Zen <span class="location">[100%]</span>
+    ----- Limpar Quest <span class="location">[100%]</span>
+   ---- Reparar Inventário <span class="location">[100%]</span>
+  --- Suporte
+   ---- Tickets de Suporte
+    ----- Tickets Abertos <span class="location">[100%]</span>
+    ----- Tickets em Andamento <span class="location">[100%]</span>
+    ----- Abrir novo Ticket <span class="location">[100%]</span>
+  --- Financeiro
+   ---- Pagamentos
+    ----- Pagamentos em Aberto <span class="location">[100%]</span>
+    ----- Pagamentos Fechados <span class="location">[100%]</span>
+    ----- Confirmar Pagamento <span class="location">[100%]</span>
+   ---- Trocar Moedas <span class="location">[100%]</span>
+   ---- Comprar VIP via Cash <span class="location">[100%]</span>
+   ---- Doações via PagSeguro (Licença Adicional) <span class="location">[100%]</span>
+
+ -- Painel Administrativo
+  --- Gerenciamento Geral
+   ---- Sincronizar VIP <span class="location">[100%]</span>
+   ---- Sincronizar Chars Banidos <span class="location">[100%]</span>
+   ---- Sincronizar Contas Banidas <span class="location">[100%]</span>
+  --- Effect Web
+   ---- Somente contas com permissão
+   ---- Verificar Atualizações (Somente Verificar) <span class="location">[100%]</span>
+    ----- Exibir Versão recente
+    ----- Exibir Data de Release
+    ----- Exibir previa do ChangeLog
+    ----- Link para mais informações
+   ---- Alterar Serial de Licença (Deletar o atual e redirecionar para o Ativador) <span class="location">[100%]</span>
+  --- Enviar E-Mail ao Jogador <span class="location">[100%]</span>
+  --- CronJob
+   ---- Somente contas com permissão
+   ---- Adicionar CronTab
+   ---- Gerenciar CronTabs
+    ----- Editar CronTab <span class="location">[100%]</span>
+    ----- Deletar CronTab <span class="location">[100%]</span>
+  --- Sistema de Soteio
+   ---- <prefix>[Raffle System]</prefix> Sortear Jogador <span class="location">[100%]</span>
+   ---- <prefix>[Raffle System]</prefix> Limpar Lista de Sorteados <span class="location">[100%]</span>
+  --- Aviso Importante
+   ---- Gerenciar Aviso (Adicionar / Editar ) <span class="location">[100%]</span>
+   ---- Remover Aviso <span class="location">[100%]</span>
+  --- Notícias
+   ---- Adicionar Notícias <span class="location">[100%]</span>
+   ---- Gerenciar Notícias <span class="location">[100%]</span>
+    ----- Editar Notícia <span class="location">[100%]</span>
+    ----- Deletar Notícia <span class="location">[100%]</span>
+  --- Gerenciar Downloads
+   ---- Adicionar Arquivo <span class="location">[100%]</span>
+   ---- Gerenciar Arquivos <span class="location">[100%]</span>
+    ----- Editar Arquivo <span class="location">[100%]</span>
+    ----- Deletar Arquivo <span class="location">[100%]</span>
+  --- Gerenciar Equipe
+   ---- Adicionar Membro <span class="location">[100%]</span>
+    ----- Administrador Somente contas Master Admin
+   ---- Gerenciar Membros <span class="location">[100%]</span>
+    ----- Editar Membro <span class="location">[100%]</span>
+     ------ Administrador Somente contas Master Admin
+    ----- Deletar Membro <span class="location">[100%]</span>
+     ------ Administrador Somente contas Master Admin
+  --- Gerenciar Enquetes
+   ---- Adicionar Enquete <span class="location">[100%]</span>
+   ---- Gerenciar Enquetes
+    ----- Editar Enquete <span class="location">[100%]</span>
+    ----- Deletar Enquete <span class="location">[100%]</span>
+  --- Gerenciar Contas
+   ---- Editar Conta
+    ----- Busca por Login / E-Mail / IP Recente / Personagem
+   ---- Banir Conta <span class="location">[100%]</span>
+    ---- Enviar E-Mail avisado sobre o banimento <span class="location">[100%]</span>
+   ---- Desbanir Conta <span class="location">[100%]</span>
+   ---- Deletar Conta [100%]
+    ----- Deleta a conta Totalmente
+    ----- Busca por Login / E-Mail / IP Recente / Personagem
+    ----- Somente contas Master Admin
+  --- Gerenciar Personagem
+   --- Criar Personagem [100%]
+    ---- Somente contas com Permissão
+   --- Editar Personagem <span class="location">[100%]</span>
+   --- Banir Personagem <span class="location">[100%]</span>
+    ---- Enviar E-Mail avisado sobre o banimento <span class="location">[100%]</span>
+   --- Desbanir Personagem <span class="location">[100%]</span>
+   --- Deletar Personagem [100%]
+    ---- Somente contas Master Admin
+  --- Referência
+   --- Ranking de Referências [100%]
+   --- Resetar Referências [100%]
+  --- Suporte
+   ---- Tickets de Suporte
+    ----- Fechar Ticket <span class="location">[100%]</span>
+    ----- Abrir Ticket <span class="location">[100%]</span>
+    ----- Deletar Ticket em Massa <span class="location">[100%]</span>
+  --- Financeiro
+   ---- Gerenciar Pagamentos
+    ----- Confirmar Pagamento <span class="location">[100%]</span>
+     ------ Ao confirmar credita automaticamente <span class="location">[100%]</span>
+    ----- Rejeitar Pagamento <span class="location">[100%]</span>
+    ----- Deletar Pagamento em Massa <span class="location">[100%]</span>
+  --- Gerenciar VIP
+   ---- Adicionar VIP <span class="location">[100%]</span>
+   ---- Transformar VIP <span class="location">[100%]</span>
+   ---- Remover VIP <span class="location">[100%]</span>
+   ---- Adicionar VIP a todas as contas Free <span class="location">[100%]</span>
+  --- Gerenciar Moedas
+   ---- Adicionar Moeda <span class="location">[100%]</span>
+   ---- Remover Moeda <span class="location">[100%]</span>
+  --- Gerenciar MSSQL
+   ---- Efetuar Backups <span class="location">[100%]</span></pre>
+<h3>Imagens do Site</h3>
+<br />
+<input type="button" value="Template Default" onclick="javascript: Element_Hidden('TPL_Default');" />
+<input type="button" value="Template DarkStyle" onclick="javascript: Element_Hidden('TPL_DarkStyle');" /> 
+<input type="button" value="CronJob Debug" onclick="javascript: Element_Hidden('CronJob_Debug');" /> 
+	<div id="TPL_Default" style="display: none;">
+    	<a target="_blank" href="http://images.ctmts.com/?id=01&img=01">
+    		<img src="http://images.ctmts.com.br/?id=01&img=01" width="604" height="438" border="2">
+    	</a>
+    </div>         
+	<div id="TPL_DarkStyle" style="display: none;">
+    	<a target="_blank" href="http://images.ctmts.com/?id=01&img=02">
+    		<img src="http://images.ctmts.com.br/?id=01&img=02" width="604" height="438" border="2">
+    	</a>
+    </div>
+	<div id="CronJob_Debug" style="display: none;">
+    	<a target="_blank" href="http://images.ctmts.com/?id=01&img=03">
+    		<img src="http://images.ctmts.com.br/?id=01&img=03" width="604" height="438" border="2">
+    	</a>
+    </div>
+</fieldset>
+<!------------------------------ v1.0 Beta Edition ------------------------------>
+<fieldset>
+<legend>v1.0 Beta Edition</legend>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x001E700</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x001E700</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.0 Release 2 Beta Edition ------------------------------>
+<fieldset>
+<legend>v1.0 Release 2 Beta Edition</legend>
+<pre> -- Alterado sistema de Paginação para Ajax <span class="location">[ajax.js]</span>
+ -- Alterado os JavaScripts <span class="location">[javascripts/]</span>
+ -- Alterado a Imagem de Loading
+ -- Fixado Bug da mensagens de Erro <span class="location">[classes/]</span>
+ -- Fixado Bug dos Rankings <span class="location">[CTM_Ranking.class.php]</span>
+ -- Fixado Bug do comando de Resetar <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug do comando de Master Reset <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug do DefaultClassType <span class="location">[CTM_PanelUser.class.php, pages/]</span>
+ -- Fixado Bug do Distribuir Pontos <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug do Top Resets / Master Resets <span class="location">[CTM_Home.class.php]</span>
+ -- Fixado Bug do sistema de Cadastro <span class="location">[CTM_Register.class.php]</span>
+ -- Fixado Bug do sistema de Upload <span class="location">[panel[UPLOAD_IMG].pag.php]</span>
+ -- Alterações no Template Defualt <span class="location">[Erick-Mater.tpl.php]</span>
+</pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x101B750</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x101B750</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.0 Release 3 Beta Edition ------------------------------>
+<fieldset>
+<legend>v1.0 Release 3 Beta Edition</legend>
+<pre> -- Fixado Bug de Segurança <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug do Captcha Code <span class="location">[CTM_Captcha.class.php]</span>
+ -- Adicionado Botão para atualizar o Captcha Code <span class="location">[pages/]</span>
+ -- Fixado Erro de Link <span class="location">[panel.pag.php]</span>
+</pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0xC417F53</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0xC417F53</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<fieldset>
+<!------------------------------ v1.1 Beta Edition ------------------------------>
+<legend>v1.1 Beta Edition</legend>
+<pre> -- Fixado Bug de Comando <span class="location">[panel[RESET_POINTS].pag.php]</span>
+ -- Fixado Bug de Titulo <span class="location">[panel[CHANGE_NICK].pag.php]</span>
+ -- Fixado Bug de Organização <span class="location">[panel[SELECT_CHAR].pag.php]</span>
+ -- Fixado Erros de Gramática <span class="location">[contact.pag.php, panel[PROFILE_CHAR].pag.php]</span>
+ -- Adicionado sistema de MySQL <span class="location">[CTM_MySQL.class.php]</span>
+ -- Adicionado novo sistema remoto por cURL <span class="location">[CTM_cURL.class.php]</span>
+ -- Adicionado Notícias via Fórum <span class="location">[CTM_Home.class.php, home.pag.php]</span>
+</pre>
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.1_Update');" /> 
+	<div id="v1.1_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+		-- Procure no <span class="location">Settings.php</span> pela Linha:
+        <pre id="quote">define(&quot;MSSQL_Security_Log&quot;, true); // -- Salvar Logs de Erros na tarefas do MSSQL (Padrão -&gt; true)</pre>
+        -- Adicione Abaixo:
+		<pre id="quote"><br />/*****************************************************************************
+	@ MySQL Settings
+	@ Configurações do Servidor MySQL Server
+	@ true = Sim
+	@ false = Não
+*****************************************************************************/
+define(&quot;MySQL_Host&quot;, &quot;localhost&quot;); // -- Host do MySQL (Padrão -&gt; localhost)
+define(&quot;MySQL_User&quot;, &quot;root&quot;); // -- Usuario do MySQL (Padrão -&gt; root)
+define(&quot;MySQL_Pass&quot;, &quot;Senha_SQL&quot;); // -- Senha do MySQL
+define(&quot;MySQL_Security_Log&quot;, true); // -- Salvar Logs de Erros na tarefas do MySQL (Padrão -&gt; true)</pre>
+        -- Procure no <span class="location">Settings.php</span> pela Linha:
+        <pre id="quote">define(&quot;Top_News&quot;, 7); // -- Total de Notícias (Padrão -&gt; 7)</pre>
+        -- Adicione Abaixo:
+        <pre id="quote">define(&quot;Board_News&quot;, true); // -- Mostrar Notícias do Fórum (Padrão -&gt; true)</pre>
+        -- Procure no <span class="location">Settings.php</span> pela Linha:
+        <pre id="quote">define(&quot;Top_Guilds&quot;, true); // -- Mostrar Top Guilds (Padrão -&gt; true)</pre>
+        -- Adicione Abaixo:
+        <pre id="quote"><br />/***** Configurações das Notícias via Fórum ************
+	@ Modulo 1 : Invision Power Board
+*******************************************************/
+$_Home[&quot;Board&quot;][&quot;Mode&quot;] = 1; // -- Modulo do Fórum
+$_Home[&quot;Board&quot;][&quot;Link&quot;] = &quot;http://localhost:8090/forum&quot;; // -- Link do Fórum
+$_Home[&quot;Board&quot;][&quot;DataBase&quot;] = &quot;forum&quot;; // -- DataBase do Fórum (Padrão -&gt; forum)
+$_Home[&quot;Board&quot;][&quot;Prefix&quot;] = &quot;ibf_&quot;; // -- Prefixo das Tables
+$_Home[&quot;Board&quot;][&quot;Forum_ID&quot;] = array(2,); // -- IDs dos Fóruns das Notícias
+$_Home[&quot;Board&quot;][&quot;Debug&quot;] = false; // -- Ativar Debug dos Titulos (Caso esteja Bugado)
+$_Home[&quot;Board&quot;][&quot;Top_News&quot;] = 7; // -- Tota de Notícias (Padrão -&gt; 7)
+$_Home[&quot;Board&quot;][&quot;Target&quot;] = false; // -- Abrir em nova Janela (Padrão -&gt; true)</pre>
+    </div>
+</div>
+<blockquote id="update_key">Altere no Settings.php a Chave de Update para: <key>
+	0xC417F53</key><br />
+	Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0xC417F53</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.3 Express Edition ------------------------------>
+<fieldset>
+<legend>v1.3 Express Edition</legend>
+<pre> -- Paginas migradas para o sistema de Template <span class="location">[pages/, templates/, classes/]</span>
+ -- Novo sistema de Template <span class="location">[CTM_Template.class.php]</span>
+ -- Adicionado sistema de CronJob <span class="location">[CTM_CronJob.class.php]</span>
+ -- Adicionado Gerenciamento do CronJob <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- <prefix>[Raffle Systen]</prefix> Adicionado sistema de Auto-Sorteio <span class="location">[CTM_CronJob.class.php]</span>
+ -- Adicionado opção para limpar Inventário, Quests e Skills no Master Reset <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado Gerador de Rankings <span class="location">[CTM_Ranking.class.php]</span>
+ -- Adicionado Ranking de Resets Semanal <span class="location">[CTM_Ranking.class.php]</span>
+ -- Adicionado Ranking de Resets Mensais <span class="location">[CTM_Ranking.class.php]</span>
+ -- Adicionado Top Resets Semanais / Mensais <span class="location">[CTM_Home.class.php]</span>
+ -- Adicionado Informações de Reset na pagina Informações <span class="location">[CTM_Info.class.php]</span>
+ -- Fixado Bug do Top Master Reset / Reset <span class="location">[CTM_Home.class.php]</span>
+ -- Novo sistema de Captcha Code <span class="location">[CTM_Captcha.class.php]</span>
+ -- Novo sistema de Licença <span class="location">[keys/]</span>
+ -- Novo verificador de Atualizações
+ -- Alterado a criptografia para <span style="color: red;">ionCube PHP Encoder</span>
+ -- Template Default refeito e atualizado <span class="location">[Default/]</span>
+</pre>
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.3_Update');" /> 
+	<div id="v1.3_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    -- Rode a Query &quot;CTM_CronJob.sql&quot; <span class="location">(modules/SQL_Scripts/Manual 
+	and Updates)</span><br>
+		-- Procure no <span class="location">Settings.php</span> pela Linha:
+        <pre id="quote">define(&quot;Column_MReset&quot;, &quot;MResets&quot;); // -- Colunna de Master Resets (Padrão -&gt; MResets)</pre>
+        -- Adicione Abaixo:
+		<pre id="quote"><br />define(&quot;Column_ResetWeek&quot;, &quot;resetsWeek&quot;); // -- Coluna dos Resets Semanais (Padrão -&gt; resetsWeek)
+define(&quot;Column_ResetMonth&quot;, &quot;resetsMonth&quot;); // -- Coluna dos Resets Mensais (Padrão -&gt; resetsMonth)</pre>
+        -- Procure no <span class="location">Settings.php</span> pela Linha:
+        <pre id="quote">/*****************************************************************************
+	@ Template Settings
+	@ Configurações do Sistema de Template
+	@ Para o template Padrão deixe &quot;Default&quot;
+*****************************************************************************/
+define(&quot;Template_Default&quot;, &quot;Default&quot;); // -- Nome do arquivo .tpl.php da pasta &quot;templates&quot; (Template Padrão)
+define(&quot;Template_Modules&quot;, &quot;Default&quot;); // -- Pasta dos Modulos do Template (modules_nome) na pasta templates (Template Padrão)
+define(&quot;Template_Selector&quot;, true); // -- Ativar/Desativar Seletor de Templates
+##################################################################
+	# Seletor de Templates
+	# Somente se tiver Abilitado
+	# OBS: Deixe Default somente para o template Padrão da Effect Web
+	# Exemplo: 0 =&gt; array(&quot;Nome do arquivo .tpl.php&quot;, &quot;Pasta de Modulos (modules_nome)&quot;, &quot;Nome do Template&quot;),
+##################################################################
+$_Templates = array(0 =&gt; array(&quot;Default&quot;, &quot;Default&quot;, &quot;Effect Web&quot;),
+				   );</pre>
+        -- Substitua por:
+        <pre id="quote">/*****************************************************************************
+	@ Template Settings
+	@ Configurações do Sistema de Template
+	@ Para o template Padrão deixe &quot;Default&quot;
+*****************************************************************************/
+define(&quot;Template_Default&quot;, &quot;Default&quot;); // -- Nome da pasta do Template na pasta &quot;templates&quot; (Template Padrão)
+define(&quot;Template_Selector&quot;, true); // -- Ativar/Desativar Seletor de Templates
+##################################################################
+	# Seletor de Templates
+	# Somente se tiver Abilitado
+	# OBS: Deixe Default somente para o template Padrão da Effect Web
+	# Exemplo: 0 =&gt; array(&quot;Pasta do Template&quot;, &quot;Nome do Template&quot;),
+##################################################################
+$_Templates = array(0 =&gt; array(&quot;Default&quot;, &quot;Effect Web&quot;),
+				   );</pre>
+        -- Procure no <span class="location">Settings.php</span> pela Linha:
+        <pre id="quote">$_Panel[&quot;Char&quot;][&quot;MReset&quot;][&quot;Clear_Reset&quot;] = array(0 /* Free */,0 /* VIP 1 */,1 /* VIP 2 */); // -- Diminuir Resets</pre>
+        -- Adicione Acima:
+        <pre id="quote"><br />$_Panel[&quot;Char&quot;][&quot;MReset&quot;][&quot;Invent&quot;] = array(0 /* Free */,0 /* VIP 1 */,0 /* VIP 2 */); // -- Limpar Invetório
+$_Panel[&quot;Char&quot;][&quot;MReset&quot;][&quot;Skill&quot;] = array(0 /* Free */,0 /* VIP 1 */,0 /* VIP 2 */); // -- Limpar Skills
+$_Panel[&quot;Char&quot;][&quot;MReset&quot;][&quot;Quest&quot;] = array(0 /* Free */,0 /* VIP 1 */,0 /* VIP 2 */); // -- Resetar Quests</pre>
+		-- Procure no <span class="location">Settings.php</span> pela Linha:
+        <pre id="quote">/************ Configurações do Gerenciar Pagamentos ************/</pre>
+        -- Adicione Acima:
+        <pre id="quote">/************ Configurações do Gerenciamento do CronJob ************/
+$_PanelAdmin[&quot;CronbJob&quot;][&quot;Security&quot;] = array(&quot;erick&quot;, ); // -- Contas com permisão de gerenciar o CronJob (Exemplo: &quot;admin&quot;,&quot;adm2&quot;)</pre>
+		-- Procure no <span class="location">Settings.php</span> pela Linha:
+        <pre id="quote">define(&quot;Top_Resets&quot;, true); // -- Mostrar Top Resets/Master Resets (Padrão -&gt; true)</pre>
+        -- Adicione Abaixo:
+        <pre id="quote">define(&quot;Top_RWeekRMonth&quot;, true); // -- Mostrar Top Resets Semanais/Mensais (Padrão -&gt; true)</pre>
+        -- Procure no <span class="location">Settings.php</span> pela Linha:
+        <pre id="quote">$_Ranking[&quot;Reset&quot;] = array(true /* Ativar/Desativar */,50 /* Limite */); // -- Ranking de Reset</pre>
+        -- Adicione Abaixo:
+        <pre id="quote">$_Ranking[&quot;ResetWeek&quot;] = array(true /* Ativar/Desativar */,50 /* Limite */); // -- Ranking de Reset Semanal
+$_Ranking[&quot;ResetMonth&quot;] = array(true /* Ativar/Desativar */,50 /* Limite */); // -- Ranking de Reset Mensal</pre>
+		-- Procure no <span class="location">Settings.php</span> pela Linha:
+        <pre id="quote">$_Ranking[&quot;PK&quot;] = array(true /* Ativar/Desativar */,50 /* Limite */); // -- Ranking de PK</pre>
+        -- Adicione Abaixo:
+        <pre id="quote">##################################################################
+	# Tops Ranking
+	# Lista de Top do Gerador de Rankings
+	# Exemplo: 0 =&gt; Numero Maximo
+##################################################################
+$_Ranking[&quot;Gerator&quot;][&quot;TOP&quot;] = array(0 =&gt; 10,
+									1 =&gt; 50,
+									2 =&gt; 100,
+									3 =&gt; 200,
+									);</pre>
+		-- Procure no <span class="location">Settings.php</span> pela Linha:
+        <pre id="quote">/*****************************************************************************
+	@ Class Settings
+	@ Configurações da Classes
+******************************************************************************/</pre>
+		-- Adicione Acima:
+        <pre id="quote">/*****************************************************************************
+	@ CronJob Settings
+	@ Configurações do sistema de CronJob
+	@ true = Sim
+	@ false = Não
+******************************************************************************/
+define(&quot;CronJob_Enable&quot;, true); // -- Ativar/Desativar CronJob
+define(&quot;CronJob_Debug&quot;, true); // -- Ativar/Desativar Modo Debug
+define(&quot;CronJob_Clear&quot;, true); // -- Ativar/Desativar Sistema para reativação dos CronTabs
+define(&quot;CronJob_Time&quot;, &quot;05&quot;); // -- Hora para Reativar os CronTabs
+define(&quot;CronJob_Minute&quot;, &quot;42&quot;); // -- Minuto para Reativar os CronTabs</pre>
+    </div>
+</div>
+<blockquote id="update_key">Altere no Settings.php a Chave de Update para: <key>
+	0x001E6AF07</key><br />
+	Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x001E6AF07</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.3 Release 2 Express Edition ------------------------------>
+<fieldset>
+<legend>v1.3 Release 2 Express Edition</legend>
+<pre> -- Fixado Bug do Captcha Code <span class="location">[CTM_Captcha.class.php]</span>
+ -- Fixado Bug do &quot;Tipo de Reset&quot; (Informações) <span class="location">[CTM_Info.class.php]</span>
+ -- Fixado Bug de segurança <span class="location">[CTM_Home.class.php]</span>
+ -- Fixado Bug de segurança <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado &quot;Tipo de Reset&quot; na index <span class="location">[index.tpl.php]</span>
+ -- Refeita a Tabela &quot;CTM_WebRaffles&quot;</pre>
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.3R2_Update');" /> 
+	<div id="v1.3R2_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    -- Rode a Query &quot;CTM_WebRaffles.sql&quot; <span class="location">(modules/SQL_Scripts/Manual 
+	and Updates)</span><br> -- Feita alterações na index.tpl.php
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x010E8AF1B</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x010E8AF1B</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.4 Project Edition ------------------------------>
+<fieldset>
+<legend>v1.4 Project Edition</legend>
+<pre> -- Language System <span class="location">[20%]</span>
+ -- Fixado Bug do Master Reset <span class="location">[CTM_PanelUser.class.php]</span> 
+ -- Corrigido alguns erros no Template Default
+ -- Novo gerador de protocolos de Tickets <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Novo sistema de VIP, agora sendo em Time Stamp para o site e números inteiros para os GameServers
+  --- Totalmente Compatível com todos os sistemas de VIPs
+  --- Time Stamp apenas para checagem no Site
+  --- Numero inteiro para o funcionamento correto em qualquer Servidor
+ -- Adicionado sistema de Cache, para checagens de 2 em 2 horas <span class="location">[CTM_Cache.class.php, Core_Cache.ini]</span>
+ -- Adicionado Cache para conexão com ConnectServer <span class="location">[CTM_ConnectServer.class.php]</span>
+ -- Adicionado compatibilidade ao ENCGames Season 6
+ -- Adicionado servidores remotos por localidade
+  --- Localidade Estados Unidos [USA]
+  --- Localidade Brasil [BRA]
+  --- Alterado pela Settings.php
+ -- Adicionado Suporte a DataBase Me_MuOnline
+ -- Adicionado Ranking de Gens <span class="location">[CTM_GensRanking.class.php, CTM_Ranking.class.php]</span>
+ -- Adicionado Opção de limpar a Lisat de Sorteados <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado Opção de trocar moedas <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado suporte a notícias via vBulletin
+ -- Adicionado Suporte de 2 a 5 Tipos de VIP
+ -- Adicionado Suporte de 1 a 3 Moedas
+ -- Removido a checagem com ExDB Server
+ -- Refeito o Sincronizador de VIP <span class="location">[CTM_PanelAdmin.class.php, CTM_CronJob.class.php]</span>
+ -- Refeito a opção de gerenciar VIPs <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Refeito a opção de gerenciar Moedas <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Refeita a base da pasta &quot;modules&quot; <span class="location">[modules/]</span>
+ -- Novo sistema de Licenças <span class="location">[Core_License.ini]</span>
+ -- Novo Seletor de Templates <span class="location">[CTM_Template.class.php]</span></pre>
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.4_Update');" /> 
+	<div id="v1.4_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    <pre>-- Rode a Query &quot;CTM_WebVIP.sql&quot; <span class="location">(modules/SQL_Scripts/Manual and Updates)</span>
+-- Rode a Query &quot;MuOnline.MEMB_INFO.sql&quot; <span class="location">(modules/SQL_Scripts/Manual and Updates)</span>
+-- Re-configure a Settings.php <span class="location">(modules/Settings.php)</span>
+-- Feitas alterações no template Default</pre>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0F1D8AA77</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0F1D8AA77</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.5 Black Edition ------------------------------>
+<fieldset>
+<legend>v1.5 Black Edition</legend>
+<pre>  -- Fixado Bug do Master Reset de não diminuir os Resets <span class="location">[CTM_PanelUser.class.php]</span> 
+ -- Fixado Bug do Gerenciar Personagem <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug do botão de atualizar o total Online <span class="location">[CTM_Ajax.class.php]</span>
+ -- Corrigido alguns erros no Template Default<span class="location">[Default/]</span>
+ -- Adicionado sistema de E-Mails <span class="location">[CTM_Mailer.class.php]</span>
+ -- Adicionado sistema de recuperação de senha <span class="location">[CTM_Recovery.class.php]</span>
+ -- Adicionado Requerimento de verificação no E-Mail ao cadastrar <span class="location">[CTM_Register.class.php]</span>
+ -- Adicionado sistema de Enquetes <span class="location">[CTM_Header.class.php]</span>
+ -- Adicionado opção de Alterar E-Mail <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado opção de Reparar Baú <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado opção de Concertar Pontos <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado opção de Reparar Inventário <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado opção de Enviar E-Mail ao Jogador <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado gerenciamento de Enquetes <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado sistema para enviar E-Mail ao jogador sobre o banimento da conta <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado sistema para enviar E-Mail ao jogador sobre o banimento do char <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado opção de Editar personagens <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado Ranking de Resets Diarios <span class="location">[CTM_Ranking.class.php]</span>
+ -- Adicionado Record Online do Dia <span class="location">[CTM_General.class.php]</span>
+ -- Adicionado suporte ao Fórum phpBB <span class="location">[CTM_Home.class.php]</span>
+ -- Adicionado pagina para customizar o &quot;Aviso Importante&quot; <span class="location">[home[WARNING].pag.php]</span>
+ -- Adicionado pagina para customizar as opções da pagina &quot;Contato&quot; <span class="location">[contact[*].pag.php]</span>
+ -- Adicionado novo Template &quot;DarkStyle&quot; <span class="location">[DarkStyle/]</span>
+ -- Refeita a base das notícias via Fórum <span class="location">[CTM_Home.class.php]</span>
+ -- Refeita a base das pastas do Site para melhor organização
+ -- Refeita a base do Template Default <span class="location">[Default/]</span>
+ -- Novo Sistema de Licenças definitivo <span class="location">[Core_License.txt]</span></pre>
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.5_Update');" /> 
+	<div id="v1.5_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    <pre>-- Rode a Query &quot;CTM_WebRecord.sql&quot; <span class="location">(modules/SQL_Scripts/Manual and Updates)</span>
+-- Rode a Query &quot;CTM_TeaM [Complete].sql&quot; <span class="location">(modules/SQL_Scripts)</span>
+-- Re-configure a Settings.php <span class="location">(modules/Settings.php)</span>
+-- Feitas alterações no template Default</pre>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0A34F160C</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0A34F160C</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.5.2 Black Edition ------------------------------>
+<fieldset>
+<legend>v1.5.2 Black Edition</legend>
+<pre><span class="location"></span> -- Fixado Bug do sistema de Licenças <span class="location">[Core_License.txt]</span> 
+ -- Fixado Bug dos VIPs <span class="location">[CTM_General.class.php]</span>
+ -- Fixado Bug do Sincronizar VIP <span class="location">[CTM_PanelAdmin.class.php, CTM_CronJob.class.php]</span>
+ -- Alterado base da tabela de sorteados <span class="location">[CTM_RaffleSystem.php]</span>
+ -- Alterado a checagem de Login <span class="location">[CTM_Ajax.class.php]</span>
+ -- Adicionado job para diminuir o tempo de VIP na tabela CTM_WebVIP <span class="location">[CTM_WebVIP.sql]</span>
+ -- Adicionado jog para atualizar o Record Diario <span class="location">[CTM_WebRecord.sql]</span>
+ -- Adicionado suporte a tabelas de Cash fora da MEMB_INFO <span class="location">[CTM_General.class.php]</span>
+ -- Adicionado checagem de conta não confirmada ao logar <span class="location">[CTM_Ajax.class.php]</span>
+ -- Adicionado checagem de conta não confirmada ao recuperar dados <span class="location">[CTM_Recovery.class.php]</span>
+ -- Adicionado opção de Adicionar VIP a todas as conats Free <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado opção de deletar Tickets em Massa <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado opção de deletar Pagamentos em Massa <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado sistema para alterar em contas as tabelas da ENCGames Season 6 ao muda o nick <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado sistema para alterar em contas as tabelas da X-Team Season 4 ao muda o nick <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado suporte ao Simple Machines Forum (SMF) <span class="location">[CTM_Home.class.php]</span>
+ -- Adicionado custom nos stats do sistema de Master Reset <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Retirado comando de banir conta ao cadastrar <span class="location">[CTM_Register.class.php]</span></pre>
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.5.2_Update');" /> 
+	<div id="v1.5.2_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    <pre>-- Rode a Query &quot;CTM_WebRaffles.sql&quot; <span class="location">(modules/SQL_Scripts/Manual and Updates)</span>
+-- Rode a Query &quot;CTM_WebRecord.sql&quot; <span class="location">(modules/SQL_Scripts/Web SQL Job)</span>
+-- Rode a Query &quot;CTM_WebVIP.sql&quot; <strong style="color: red">SOMENTE</strong> se usar a tabela CTM_WebVIP para os VIPs <span class="location">(modules/SQL_Scripts/Web SQL Job)</span></pre>
+	-- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">define(&quot;Is_ENCGames&quot;, true); // -- Server Files ENCGames (Padrão -&gt; true)</pre>
+    -- Subistitua por:
+    <pre id="quote">define(&quot;Server_Files&quot;, 0); // -- Server Files [0=ENCGames Season 6] [1=X-Team Season 4] [2=Outros]</pre>
+    -- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">$_Panel[&quot;Char&quot;][&quot;MReset&quot;][&quot;Money&quot;]</pre>
+    -- Adicione abaixo:
+    <pre id="quote">$_Panel[&quot;Char&quot;][&quot;MReset&quot;][&quot;Stats&quot;] = array(65000 /* Força */,65000 /* Agilidade */,65000 /* Vitalidade */,65000 /* Energia */,65000 /* Comando (Somente DL/LE */); // -- Stats Requeridos para dar o Master Reset
+$_Panel[&quot;Char&quot;][&quot;MReset&quot;][&quot;Points&quot;] = array(100 /* Força */,18 /* Agilidade */,15 /* Vitalidade */,30 /* Energia */,0 /* Comando (Somente DL/LE */); // -- Stats apos o Master Reset</pre>
+	-- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">$_PanelAdmin[&quot;Characters&quot;][&quot;Ban&quot;][&quot;Send_Mail&quot;] = true; // -- Enviar E-Mail a conta caso o char for banido (Padrão -&gt; true)</pre>
+    -- Adicione abaixo:
+    <pre id="quote">/************ Configurações do Gerenciar Tickets ************/
+$_PanelAdmin[&quot;Ticket&quot;][&quot;Delete&quot;] = 3; // -- Permisão minima para deletar Tickets</pre>
+	-- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">$_PanelAdmin[&quot;Payment&quot;][&quot;Auto_Credit&quot;] = true; // -- Creditar Golds automaticamente ao Confirmar Pagamento (Padrão -&gt; true)</pre>
+    -- Adicione abaixo:
+    <pre id="quote">$_PanelAdmin[&quot;Payment&quot;][&quot;Delete&quot;] = 3; // -- Permisão minima para deletar Pagamentos
+
+/************ Configurações do Gerenciar VIP ************/
+$_PanelAdmin[&quot;VIPs&quot;][&quot;All&quot;] = 3; // -- Permisão minima para adicionar VIP em todas as contas Free</pre>
+	-- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">@ Modulo 3 : phpBB</pre>
+    -- Adicione abaixo:
+    <pre id="quote">@ Modulo 4 : Simple Machines Forum (SMF)</pre>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0D109ABFF</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0D109ABFF</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.5.3 Black Edition ------------------------------>
+<fieldset>
+<legend>v1.5.3 Black Edition</legend>
+<pre> -- Fixado Bug do sistema de Cash Table fora da MEMB_INFO <span class="location">[CTM_General.class.php]</span>
+ -- Fixado Bug do sistema de Sincronizar VIPs <span class="location">[CTM_PanelAdmin.class.php, CTM_CronJob.class.php]</span>
+ -- Alterado a estrutura do Top Resets Diarios / Semanal / Mensal <span class="location">[CTM_Home.class.php]</span>
+ -- Refeita as Querys das Jobs <span class="location">[modules/SQL_Scripts/Web SQL Job]</span></pre>
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.5.3_Update');" /> 
+	<div id="v1.5.3_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    <pre>-- Rode a Query &quot;CTM_WebRecord.sql&quot; <span class="location">(modules/SQL_Scripts/Web SQL Job)</span>
+-- Rode a Query &quot;CTM_WebVIP.sql&quot; <strong style="color: red">SOMENTE</strong> se usar a tabela CTM_WebVIP para os VIPs <span class="location">(modules/SQL_Scripts/Web SQL Job)</span></pre>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x01B0FA3E9</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x01B0FA3E9</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.5.4 Black Edition ------------------------------>
+<fieldset>
+<legend>v1.5.4 Black Edition</legend>
+<pre> -- Fixado Bug do sistema de alterar Classe <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug do sistema de Sincronizar VIPs <span class="location">[CTM_PanelAdmin.class.php, CTM_CronJob.class.php]</span>
+ -- Fixado Bug do sistema de alterar Nick <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Novo ChangeLog em XHTML 1.1 para melhor entendimento <span class="location">[ChangeLog.htm]</span></pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0F03713EB</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0F03713EB</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.5.5 Black Edition ------------------------------>
+<fieldset>
+<legend>v1.5.5 Black Edition</legend>
+<pre> -- Fixado Bug do sistema de alterar Classe ao ENCGames <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug do sistema de Banir conta <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Fixado Bug do sistema de recuperar dados <span class="location">[CTM_Recovery.class.php]</span>
+ -- Até o momento sem erros reportados<span class="location"></span></pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0C17E930F</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0C17E930F</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.6 Prime Edition ------------------------------>
+<fieldset>
+<legend>v1.6 Prime Edition</legend>
+<pre> -- Adicionado sistema de ScreenShots <span class="location">[CTM_ScreenShots.class.php]</span>
+ -- Adicionado comentários nas Notícias <span class="location">[CTM_Notices.class.php]</span>
+ -- Adicionado opção de Transferir Resets <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado opção de Trocar Resets por Cash <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado opção de Criar Personagem <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado opção de Deletar Personagem <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado opção de Editar conta localizada por Login /E-Mail/ IP / Personagem <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado opção de Deletar Conta em massa <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Refeito o sistema de MySQL agora sendo opções por DataBase <span class="location">[CTM_MySQL.class.php]</span>
+ -- Refeita a base do sistema de Licenças <span class="location">[Core_License.txt]</span>
+ -- Refeito o sistema de conexões remotas cURL <span class="location">[CTM_cURL.class.php]</span>
+ -- Novo sistema de verificar atualizações, agora exibindo informações do update <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Novo sistema de Upload de Arquivos, agora sendo diversos tipos de arquivos e imagens <span class="location">[CTM_FileUpload.class.php]</span></pre>
+ <input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.6_Update');" /> 
+	<div id="v1.6_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    <pre>-- Rode a Query &quot;CTM_TeaM [Complete].sql&quot; <span class="location">(modules/SQL_Scripts)</span>
+-- Rode a Query &quot;CTM_WebNews.sql&quot; <span class="location">(modules/SQL_Scripts/Manual and Updates)</span>
+-- Re-configure a <span class="location">Settings.php</span></pre>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0A1DEB1FF</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0A1DEB1FF</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.6.2 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.6.2 Finish Edition</legend>
+<pre> -- Fixado Bug do Refresh de Servidores <span class="location">[CTM_Ajax.class.php]</span>
+ -- Fixado Bug do acréscimo de pontos no Reset Acumulativo <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug do Distribuir Pontos, adicionado verificação de valores não-numericos <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado no Cache de Licença a verificação Local<br /> -- Alterado os Modulos de conexão aos novos servidores da CTM TEAM<span class="location"></span><br /> -- Versão Final da Serie Effect Web v1.x
+</pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0FF159A1C</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0FF159A1C</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7 Finish Edition</legend>
+<pre> -- Corrigido erro de Grámatica do &quot;Painel Administrativo&quot; <span class="location">[CTM_Ajax.class.php]</span>
+ -- Corrigido erros de Grámatica no ChangeLog <span class="location">[ChangeLog.htm]</span>
+ -- Corrigido erros de Grámatica na Settings.php <span class="location">[Settings.php]</span>
+ -- Fixado Bug da configuração da coluna Reset <span class="location">[CTM_Online.class.php]</span>
+ -- Fixado Bug da configuração da coluna de Reset no Transferir Resets <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug do nome da moeda configurada na mensagem de sucesso ao dar Master Reset <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug do registro em determinados valores <span class="location">[CTM_Register.class.php]</span>
+ -- Fixado Bug's do de visualiza&ccedil;&atilde;o <span class="location">[CTM_Register.class.php]</span>
+ -- Fixado Bug de postar ScreenShot sem possuir char <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug do CtlCode ao Criar Char <span class="location">[CTM_CreateCharacter]</span>
+ -- Fixado Bug de Segurança <span class="location">[CTM_General.class.php]</span>
+ -- Fixado Bug do Internet Explorer 7/8/9 <span class="location">[index.php]</span>
+ -- Refeito o carregamento dos valores do VIP na página Comprar VIP, não retornando bugs <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado opção de Alterar Personal ID (PID) <span class="location">[CTM_PanelUser.class.php]</span>
+ -- <prefix>[Raffle System]</prefix> Adicionado configuração da moeda a ser sorteada <span class="location">[CTM_RaffleSystem.class.php, CTM_CronJob.class.php]</span>
+ -- Adicionado configuração da moeda a ser premiada no Registro <span class="location">[CTM_Register.class.php]</span>
+ -- Adicionado gerenciamento de todas as ScreenShots (Deletar) <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado Top PK/Hero na página Home <span class="location">[CTM_Home.class.php]</span>
+ -- Adicionado JOB para retirar os VIP's, n&atilde;o requerindo o uso do CronJob
+ -- Refeito o Ranking de PK/Hero <span class="location">[CTM_Ranking.class.php]</span>
+ -- Removido o sistema PM System
+ -- Removido no title a frase &quot; - Powered by CTM TEAM&quot;<br /> -- Alterado o tempo do Cache de licença para 12 horas<span class="location"></span>
+ -- Alterado a ordem nas ScreenShots para votos
+ -- Alterado a tabela de VIP para MEMB_INFO (Para novas instala&ccedil;&otilde;es)<br /> -- Release Final da Serie Effect Web v1.x
+</pre>
+ <input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.7_Update');" /> 
+  <div id="v1.7_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    <pre>-- Siga as instru&ccedil;&otilde;es da JOB de VIPSystem <span class="location">(modules/SQL_Scripts/Web SQL Job)</span>
+-- V&aacute; na coluna &quot;CTM_WebFiles&quot;, mude o tamanho da coluna &quot;link&quot; para 300
+-- Rode a Query &quot;CTM_CreateCharacter.sql&quot; <span class="location">(modules/SQL_Scripts/Web SQL Procedures)</span>
+-- <strong style="color: red;">N&Atilde;O RODE AS OUTRAS QUERYS</strong>
+-- Re-configure a <span class="location">Settings.php</span></pre>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x04FF46AA1</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x04FF46AA1</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.1 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.1 Finish Edition</legend>
+<pre> -- Fixado Bug do sistema de Sessions <span class="location">[index.php]</span>
+ -- Alterado o Load de Captcha Image <span class="location">[index.php, CTM_Captcha.class.php]</span>
+ -- Alterado o Load de Logo Guild Decode <span class="location">[index.php, CTM_LogoGuild.class.php]</span>
+ -- Alterado a URL do Captcha Load <span class="location">[*]</span>
+ -- Alterado a URL do Logo Guild Decode <span class="location">[*]</span>
+</pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0FFC0FB73</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0FFC0FB73</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.2 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.2 Finish Edition</legend>
+<pre> -- Refeito o Ranking de PK <span class="location">[CTM_Ranking.class.php]</span>
+ -- Adicionado Ranking de Hero <span class="location">[CTM_Ranking.class.php]</span>
+ -- Adicionado compatibilidade a DataBase da X-Team Season 6 <span class="location">[CTM_PanelUser.class.php, CTM_PanelAdmin.class.php]</span>
+</pre>
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.7.2_Update');" /> 
+  <div id="v1.7.2_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+	-- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">define(&quot;Server_Files&quot;, 0); // -- Server Files [0=ENCGames Season 6] [1=X-Team Season 4] [2=Outros]</pre>
+    -- Subistitua por:
+    <pre id="quote">define(&quot;Server_Files&quot;, 0); // -- Server Files [0=ENCGames Season 6] [1=X-Team Season 4/5] [2=X-Team Season 6] [3=Outros]</pre>
+    -- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">$_Ranking[&quot;PK/Hero&quot;] = array(true /* Ativar/Desativar */,50 /* Limite */); // -- Ranking de PK/Hero</pre>
+    -- Subistitua por:
+    <pre id="quote">$_Ranking[&quot;PK&quot;] = array(true /* Ativar/Desativar */,50 /* Limite */); // -- Ranking de PK<br />$_Ranking[&quot;Hero&quot;] = array(true /* Ativar/Desativar */,50 /* Limite */); // -- Ranking de Hero</pre>
+    -- Feitas altera&ccedil;&otilde;es nos templates <span class="location">[index.tpl.php, ranking.pag.php]</span>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0FFF7941A</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0FFF7941A</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.3 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.3 Finish Edition</legend>
+<pre> -- Refeito o Top PK/Hero <span class="location">[CTM_Home.class.php]</span>
+ -- Fixado bug de Cash Bonus <span class="location">[CTM_Register.class.php]</span>
+ -- Adicionado verifica&ccedil;&otilde;es de seguran&ccedil;a ao Trocar Resets por Cash <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Ao Trocar Resets por Cash, o sistema diminui os resets premiados ao cadastrar (Caso tenha) <span class="location">[CTM_PanelUser.class.php]</span></pre>
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.7.3_Update');" /> 
+  <div id="v1.7.3_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+	-- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">$_Panel["Char"]["Trade_RCash"]["Price"] = 10; // -- Preço de cada Moeda em Resets</pre>
+    -- Adicione abaixo:
+    <pre id="quote">$_Panel["Char"]["Trade_RCash"]["Min_Total"] = 40; // -- Numero minimo de Resets que o char deve conter
+$_Panel["Char"]["Trade_RCash"]["Min_Send"] = 20; // -- Numero minimo de Moeda que o char pode requisitar
+$_Panel["Char"]["Trade_RCash"]["Bonus_Register"] = 10; // -- Numero de resets que ganha ao cadastrar (Caso não ganha, deixe 0)</pre>
+    -- Feitas altera&ccedil;&otilde;es nos templates <span class="location">[paneluser[TRADE_RCASH].pag.php]</span>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0A749FFCE</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0A749FFCE</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.4 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.4 Finish Edition</legend>
+<pre> -- Fixado Bug do gerenciamento de personagens <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug do Top PK/Hero <span class="location">[CTM_Home.class.php]</span>
+ -- Adicionado verifica&ccedil;&atilde;o de seguran&ccedil;a no Gerenciar Personagem <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado verfica&ccedil;&otilde;es de acentos ao Trocar Nick <span class="location">[CTM_PanelUser.class.php]</span><span class="location"></span>
+ -- Adicionado verifica&ccedil;&otilde;es de tamanho ao Trocar Nick (Maximo 10 caracteres) <span class="location">[CTM_PanelUser.class.php]</span></pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0B9A1D5F0</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0B9A1D5F0</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.5 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.5 Finish Edition</legend>
+<pre> -- Fixado Bug do gerenciamento de personagens <span class="location">[CTM_PanelUser.class.php]</span><span class="location"></span></pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x04F05AE7B</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x04F05AE7B</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.6 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.6 Finish Edition</legend>
+<pre> -- Fixado Bug do Comprar VIP em todos os navegadores (Literalmente) <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug do Resetar Pontos adicionar pontos extras <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug do Change PID que efetuava verifica&ccedil;&atilde;o de senha incorretamente <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado Bug de Seguran&ccedil;a <span class="location">[CTM_General.class.php]</span>
+ -- Fixado Bug do nome da moeda do Master Reset <span class="location">[CTM_VipPage.class.php]</span>
+ -- Adicionado nova varredura de inject <span class="location">[CTM_Security.class.php]</span><span class="location"></span>
+ -- Adicionado linhas para alterar colunas de Ba&uacute; Extra e Imagens <span class="location">[Settings.php]</span><span class="location"></span>
+ -- Ranking de PK e Hero refeito agora com nova coluna de count <span class="location">[CTM_Ranking.class.php, CTM_Home.class.php]</span>
+ -- Alterado comando no Alterar PK/Hero para o novo count dos rankings <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Alterado o arquivo de licen&ccedil;a <span class="location">[Core_License.dat]</span>
+ -- Refeito o sistema de criptografia para melhor seguran&ccedil;a <span class="location">[CTM_Crypt.class.php]</span>
+ -- Retirado verifica&ccedil;&otilde;es in&uacute;teis para melhor desempenho do site <span class="location">[CTM_Crypt.class.php]</span></pre>
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.7.6_Update');" /> 
+  <div id="v1.7.6_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    -- Delete o arquivo <span class="location">Core_License.txt</span> da pasta <span class="location">modules/core</span> e reative o Serial.<br />
+	-- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">define("GS_Version", 6); // -- Server Version [0=99B-] [1=99Z a Season 1] [2=Season 2] [3=Season 3 EP1] [4=Season 3 EP2 a Season 4.5] [5=Season 5] [6=Season 6]</pre>
+    -- Adicione abaixo:
+    <pre id="quote">define("EXTRA_VAULT_COLUMN", "CTM_Vault"); // -- Coluna do Baú Extra (Web) (Padrão -> CTM_Vault)
+define("CHAR_IMAGE_COLUMN", "CTM_Image"); // -- Coluna da imagem pessoal (Padrão -> CTM_Image)
+define("RANKING_PK_COLUMN", "PkCountWeb"); // -- Coluna do Ranking de PK (Padrão -> PkCountWeb)
+define("RANKING_HERO_COLUMN", "HeroCountWeb"); // -- Coluna do Ranking de PK (Padrão -> HeroCountWeb)</pre>
+    -- Rode à seguinte Query:
+    <pre id="quote">USE [MuOnline]
+GO
+
+ALTER TABLE dbo.Character ADD PkCountWeb int NOT NULL DEFAULT 0 
+GO
+
+ALTER TABLE dbo.Character ADD HeroCountWeb int NOT NULL DEFAULT 0 
+GO</pre>
+    -- Feitas altera&ccedil;&otilde;es nos templates <span class="location">[paneluser[BUY_VIP].pag.php, vip-cash.pag.php]</span>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x08A07FEFC</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x08A07FEFC</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.7 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.7 Finish Edition</legend>
+<pre> -- Altera&ccedil;&otilde;es no sistema de Authentication de Licen&ccedil;a <span class="location">[classes/]</span>
+ -- Adicionado op&ccedil;&atilde;o para fixar a data do Castle Siege <span class="location">[CTM_Home.class.php]</span>
+ -- Retirado diversas syntax para melhor otimizar o site <span class="location">[classes/]</span>
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.7.7_Update');" /> 
+</pre>
+  <div id="v1.7.7_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    -- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">define("Show_ScreenShots", true); // -- Mostrar ScreenShots Recentes (Padrão -> true)</pre>
+    -- Adicione abaixo:
+    <pre id="quote">define("SIEGE_DATE_FIX", TRUE); // -- Habilite esta opção caso o site exibir somado +1 a data do Siege (Padrão -> TRUE)</pre>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0C4A4F51E</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0C4A4F51E</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.8 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.8 Finish Edition</legend>
+<pre> -- Adicionado Anti-Spam na pagina&ccedil;&atilde;o Ajax (Evita bugs e boots) <span class="location">[CTM_Pages.class.php]</span>
+ -- Adicionado reconstru&ccedil;&atilde;o do Captcha para evitar boots <span class="location">[CTM_Register.class.php]</span>
+ -- Adicionado sorteio para diversas moedas simult&acirc;neos <span class="location">[CTM_RaffleSystem.class.php]</span>
+ -- Adicionado suporte no CronJob ao novo sistema de sorteio <span class="location">[CTM_CronJob.class.php]</span>
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.7.8_Update');" /> 
+</pre>
+  <div id="v1.7.8_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+	-- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">$_RaffleSystem["Coin"] = 2; // -- Moeda a ser Sorteada [De 1 a 3] (Padrão -> 1)</pre>
+    -- Remova a mesma e em seguida procure pela linha:
+    <pre id="quote">$_RaffleSystem["List"]["Id"] = true; // -- Exibir Id do Sorteado na lista de sorteados (Padrão -> false)</pre>
+    -- Adicione em baixo:
+    <pre id="quote">$_RaffleSystem["List"]["Coin"] = true; // -- Exibir a moeda premiada na lista de sorteados (Padrão -> true)</pre>
+    -- Rode à seguinte Query:
+    <pre id="quote">USE [CTM_TeaM]
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[CTM_WebCronJob]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [dbo].[CTM_WebCronJob]
+GO
+
+CREATE TABLE [dbo].[CTM_WebCronJob] (
+	[Id] [int] IDENTITY (1, 1) NOT NULL ,
+	[CronTab] [int] NOT NULL ,
+	[Cron_Runing] [int] NOT NULL ,
+	[Cron_Date] [int] NOT NULL ,
+	[Cron_Time] [varchar] (50) COLLATE Latin1_General_CI_AS NOT NULL ,
+	[Coin] [int] NOT NULL ,
+	[Number] [int] NOT NULL 
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[CTM_WebCronJob] WITH NOCHECK ADD 
+	CONSTRAINT [DF_CTM_WebCronJob_Coin] DEFAULT (1) FOR [Coin],
+	CONSTRAINT [DF_CTM_WebCronJob_Number] DEFAULT (0) FOR [Number]
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[CTM_WebRaffles]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [dbo].[CTM_WebRaffles]
+GO
+
+CREATE TABLE [dbo].[CTM_WebRaffles] (
+	[Id] [int] IDENTITY (1, 1) NOT NULL ,
+	[MuCharacter] [varchar] (50) COLLATE Latin1_General_CI_AS NOT NULL ,
+	[Coin] [int] NOT NULL ,
+	[Award] [int] NOT NULL ,
+	[Raffle_Date] [varchar] (50) COLLATE Latin1_General_CI_AS NOT NULL ,
+	[Raffle_Time] [varchar] (50) COLLATE Latin1_General_CI_AS NOT NULL 
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[CTM_WebRaffles] WITH NOCHECK ADD 
+	CONSTRAINT [DF_CTM_WebRaffles_Coin] DEFAULT (1) FOR [Coin]
+GO
+</pre>
+	-- Cadastre novamente os CronTabs.<br />
+	-- <span style="color: #F00;">Aten&ccedil;&atilde;o</span>: Feitas altera&ccedil;&otilde;es nos templates <span class="location">[paneladmin[ADD_CRONTAB].pag.php, paneladmin[RAFFLE_PLAYER].pag.php]</span>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0F2A57E6C</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0F2A57E6C</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.9 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.9 Finish Edition</legend>
+<pre> -- Fixado Bug do carregamento do site <span class="location">[CTM_Pages.class.php]</span><span class="location"></span>
+ -- Fixado Bug Resetar Pontos <span class="location">[CTM_PanelUser.class.php]</span><span class="location"></span></pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0CDF5A161</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0CDF5A161</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.10 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.10 Finish Edition</legend>
+<pre> -- Fixado Bug do carregamento do site <span class="location">[CTM_Pages.class.php]</span><span class="location"></span>
+ -- Fixado Bug da sess&atilde;o nas op&ccedil;&otilde;es "Gerenciar Imagem" e "Adicionar ScreenShot" <span class="location">[CTM_Pages.class.php]</span><span class="location"></span></pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x095FCA6BE</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x095FCA6BE</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.11 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.11 Finish Edition</legend>
+<pre> -- Fixado bug visual na op&ccedil;&atilde;o de sortear player <span class="location">[CTM_PanelAdmin.class.php] </span>
+ -- Fixado bug que deletava as licen&ccedil;as do site <span class="location">[classes/]</span>
+ -- Alterado a verifica&ccedil;&atilde;o Anti-Inject, ao inv&eacute;s de bloquear, apenas remova-os <span class="location">[CTM_Security.class.php]</span><span class="location"></span><br /> -- Adicionado nova checagem de seguran&ccedil;a: prote&ccedil;&atilde;o nas sessions do site <span class="location">[CTM_Security.class.php]</span>
+ -- Feito varredura de falhas no site, fixando devidos bugs de inject <span class="location">[classes/, load.inc.php]</span></pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0F306AC71</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0F306AC71</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.12 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.12 Finish Edition</legend>
+<pre> -- Fixado bug do Resetar Pontos (Definitivamente) <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado bug dos hexas nos servidores X-Team Season 6 <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado diretamente o m&oacute;dulo PagSeguro* <span class="location">[CTM_PagSeguro.class.php, CTM_PanelUser.class.php]</span><span class="location"></span>
+ -- Adicionado diretamente o item B&ocirc;nus no cadastro* <span class="location">[CTM_Register.class.php]</span>
+ -- Adicionado Reset Tabelado <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Alterado op&ccedil;&otilde;es do Panel Admin: VIP e Cash, procurando por Char ou Login <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Alterado o sistema de criptografia <span class="location">[CTM_Crypt.class.php]</span>
+ -- Atualiza&ccedil;&atilde;o no sistema de licen&ccedil;a <span class="location">[Core_License.txt]</span>
+ -- Desenvolvido a ferramenta &quot;Create VIP Job&quot; para criar a Job de VIP autom&aacute;ticamente
+ 
+ * = Ambos os m&oacute;dulos n&atilde;o est&atilde;o liberados para uso, ter&aacute; que adquirir a licen&ccedil;a dos mesmos com o Litlle.
+</pre>
+ <input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.7.12_Update');" /> 
+  <div id="v1.7.12_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    <pre>-- Reconfigure a <span class="location">Settings.php</span>
+-- Reinstale todos os arquivos dos templates</pre>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0FF17ECB1</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0FF17ECB1</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.13 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.13 Finish Edition</legend>
+<pre> -- Fixado bug do sistema de Item B&ocirc;nus <span class="location">[CTM_Register.class.php] </span>
+</pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0F0AFE6B8</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0F0AFE6B8</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.14 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.14 Finish Edition</legend>
+<pre> -- Fixado bug do sistema de Item B&ocirc;nus <span class="location">[CTM_Register.class.php]</span>
+ -- Fixado problema das sessions  <span class="location">[CTM_Security.class.php, load.inc.php]</span>
+ -- Adicionado campo de Personal ID no cadastro <span class="location">[CTM_Register.class.php]</span>
+ -- Adicionado op&ccedil;&atilde;o para for&ccedil;ar logins min&uacute;sculos nas querys de cadastro e valida&ccedil;&atilde;o <span class="location">[CTM_Register.class.php]</span>
+ 
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.7.14_Update');" /> 
+</pre>
+  <div id="v1.7.14_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    -- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">define("Register[ItemBonus]", TRUE); // -- Habilitar o Item Bônus (Necessário licença adicional)</pre>
+    -- Adicione abaixo:
+    <pre id="quote">define("Register[DefinePID]", TRUE); // -- Solicitar o Personal ID no cadastro
+define("Register[ForceLower]", TRUE); // -- Forçar logins minúsculos na query de cadastro e validação</pre>
+	-- <span style="color: #F00;">Aten&ccedil;&atilde;o</span>: Feitas altera&ccedil;&otilde;es nos templates <span class="location">[register.pag.php]</span>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0F76F06FA</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0F76F06FA</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.15 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.15 Finish Edition</legend>
+<pre> -- Fixado bug do sistema do Captcha Code no registro <span class="location">[CTM_Register.class.php] </span>
+</pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0A76F16C0</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0A76F16C0</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.16 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.16 Finish Edition</legend>
+<pre> -- Fixado bug do sistema de PagSeguro <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado erro na ferramenta &quot;Create VIP Job&quot; que criava a step de execu&ccedil;&atilde;o com erros <span class="location">[Create VIP Job.rar]</span>
+ -- Adicionado suporte as colunas da Season 6 EP2 e EP3  <span class="location">[CTM_PanelUser.class.php, CTM_PanelAdmin.class.php, CTM_General.class.php]</span><br /> -- Adicionado query para fixar erro do CtlCode em casos de problemas do ranking n&atilde;o exibir todos os chars <span class="location">[Fix CtlCode.sql]</span>
+ -- Alterado as querys de limpesa do Ba&uacute;, Invent&aacute;rio, Skill e Quest para hexadecimal, evitando erros <span class="location">[CTM_General.class.php, CTM_PanelUser.class.php, CTM_PanelAdmin.class.php]</span>
+ -- Refeito o sistema de data do CronJob <span class="location">[CTM_CronJob.class.php, CTM_PanelAdmin.class.php]</span>
+ -- Refeita a query de instala&ccedil;&atilde;o do site <span class="location">[CTM_TeaM [Complete].sql, Column CTM_Vault.sql]</span>
+ -- Desenvolvido a ferramenta &quot;Add Staff Member&quot; para cadastrar com facilidade membros na equipe e permiss&atilde;o ao Painel Administrativo
+ 
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.7.16_Update');" /> 
+</pre>
+  <div id="v1.7.16_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    -- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">define("GS_Version", 6); // -- Server Version [0=99B/Inferior] [1=99Z a Season 1] [2=Season 2] [3=Season 3 EP1] [4=Season 3 EP2 a Season 4.5] [5=Season 5] [6=Season 6]</pre>
+    -- Altere para:
+    <pre id="quote">define("GS_Version", 6); // -- Server Version [0=99B-] [1=99Z a Season 1] [2=Season 2] [3=Season 3 EP1] [4=Season 3 EP2 a Season 4.5] [5=Season 5] [6=Season 6 EP1] [7=Season 6 EP2/3]</pre>
+    -- Rode à seguinte Query:
+    <pre id="quote">if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[CTM_WebCronJob]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [dbo].[CTM_WebCronJob]
+GO
+
+CREATE TABLE [dbo].[CTM_WebCronJob] (
+	[Id] [int] IDENTITY (1, 1) NOT NULL ,
+	[CronTab] [int] NOT NULL ,
+	[Cron_Time] [varchar] (50) COLLATE Latin1_General_CI_AS NOT NULL ,
+	[Cron_Next] [int] NOT NULL ,
+	[Coin] [int] NOT NULL ,
+	[Number] [int] NOT NULL 
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[CTM_WebCronJob] ADD 
+	CONSTRAINT [DF_CTM_WebCronJob_Cron_Next] DEFAULT (0) FOR [Cron_Next],
+	CONSTRAINT [DF_CTM_WebCronJob_Coin] DEFAULT (1) FOR [Coin],
+	CONSTRAINT [DF_CTM_WebCronJob_Number] DEFAULT (0) FOR [Number]
+GO</pre>
+	-- <span style="color: #F00;">Aten&ccedil;&atilde;o</span>: Feitas altera&ccedil;&otilde;es nos templates <span class="location">[paneladmin[ADD_CRONTAB].pag.php, paneladmin[EDIT_CRONTAB].pag.php]</span>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0F49A104D</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0F49A104D</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.7.17 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.7.17 Finish Edition</legend>
+<pre> -- Fixado bug do selecionar moeda no adicionar CronTab <span class="location">[paneladmin[ADD_CRONTAB].pag.php]</span>
+ 
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.7.17_Update');" /> 
+</pre>
+  <div id="v1.7.17_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+	-- <span style="color: #F00;">Aten&ccedil;&atilde;o</span>: Feitas altera&ccedil;&otilde;es nos templates <span class="location">[paneladmin[ADD_CRONTAB].pag.php]</span>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0AF9E00C9</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0AF9E00C9</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.8.0 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.8.0 Finish Edition</legend>
+<pre> -- Fixado bug das colunas Items (warehouse), Inventory, MagicList e Quest <span class="location">[classes/]</span>
+ -- Fixado bug de senha ao cadastrar com confirmação no E-Mail <span class="location">[CTM_Register.class.php]</span>
+ -- <span style="color: red">Adicionado sistema de Link Referência (HOT)</span> <span class="location">[load.inc.php, classes/]</span>
+ -- Adicionado total de contas VIP 3, VIP 4 e VIP 5 na index do site <span class="location">[CTM_General.class.php]</span>
+ -- Adicionado total de moeda 2 e moeda 3 na barra do painel de controle <span class="location">[CTM_Ajax.class.php]</span>
+ -- Adicionado registro na tabela de quem baniu contas e personagens <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado página de contas banidas <span class="location">[CTM_Banneds.class.php]</span>
+ -- Adicionado página de personagens banidas <span class="location">[CTM_Banneds.class.php]</span>
+ -- Adicionado query para fixar erro ao logar no painel (conta não confirmada) <span class="location">[Fix Mail.sql]</span>
+ -- Alterado toda a segurança do site <span class="location">[index.php, modules/]</span>
+ 
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.8.0_Update');" /> 
+</pre>
+  <div id="v1.8.0_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    -- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">define("ExtWare_Login", "AccountID"); // -- Coluna de Login do Baú Extra (Padrão -> AccountID)</pre>
+    -- Adicione abaixo:
+    <pre id="quote">
+
+/*****************************************************************************
+	@ Reference Settings
+	@ Configurações do sistema de Referência
+	@ true = Sim
+	@ false = Não
+*****************************************************************************/
+define("NEWFINAL_REF_ACCESSPOINTS", 1); // -- Pontos por cada acesso
+define("NEWFINAL_REF_REGPOINTS", 2); // -- Pontos por cada registro
+define("NEWFINAL_REF_LINK", "http://www.seusite.com.br/?ref="); // -- Link de referência</pre>
+    -- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">$_Panel["Account"]["ScreenShots"] = array(1 /* Ativado */,1 /* Free */,1 /* VIP 1 */,1 /* VIP 2 */,1 /* VIP 3 */,1 /* VIP 4 */,1 /* VIP 5 */); // -- Enviar / Remover ScreenShots</pre>
+    -- Adicione abaixo:
+    <pre id="quote">$_Panel["Account"]["ReferenceLink"] = array(1 /* Ativado */,1 /* Free */,1 /* VIP 1 */,1 /* VIP 2 */,1 /* VIP 3 */,1 /* VIP 4 */,1 /* VIP 5 */); // -- Link de Referência</pre>
+    -- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">$_PanelAdmin["Character"] = 1; // -- Permissão minima para Gerenciar Chars</pre>
+    -- Adicione abaixo:
+    <pre id="quote">$_PanelAdmin["Reference"] = 3; // -- Permissão minima para Gerenciar Referência</pre>
+    -- Rode à seguinte Query:
+    <pre id="quote">USE [CTM_TeaM]
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[CTM_WebReference]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [dbo].[CTM_WebReference]
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[CTM_WebReferenceData]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [dbo].[CTM_WebReferenceData]
+GO
+
+CREATE TABLE [dbo].[CTM_WebReference] (
+	[Id] [int] IDENTITY (1, 1) NOT NULL ,
+	[Account] [varchar] (50) COLLATE Latin1_General_CI_AS NOT NULL ,
+	[AccessCount] [int] NOT NULL ,
+	[RegisterCount] [int] NOT NULL ,
+	[Points] [int] NOT NULL ,
+	[EventCurrentResult] [int] NOT NULL 
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[CTM_WebReferenceData] (
+	[Reference] [int] NOT NULL ,
+	[RefLogin] [varchar] (50) COLLATE Latin1_General_CI_AS NOT NULL ,
+	[Account] [varchar] (50) COLLATE Latin1_General_CI_AS NOT NULL ,
+	[IPAddress] [varchar] (50) COLLATE Latin1_General_CI_AS NOT NULL 
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[CTM_WebReference] ADD 
+	CONSTRAINT [DF_CTM_MuReference_LinkCount] DEFAULT (0) FOR [AccessCount],
+	CONSTRAINT [DF_CTM_MuReference_RegisterCount] DEFAULT (0) FOR [RegisterCount],
+	CONSTRAINT [DF_CTM_MuReference_Points] DEFAULT (0) FOR [Points],
+	CONSTRAINT [DF_CTM_MuReference_EventCurrentResult] DEFAULT (0) FOR [EventCurrentResult]
+GO
+
+ALTER TABLE dbo.CTM_WebAccBan ADD Responsible varchar(50) NULL
+GO
+
+ALTER TABLE dbo.CTM_WebCharBan ADD Responsible varchar(50) NULL
+GO</pre>
+	-- <span style="color: #F00;">Aten&ccedil;&atilde;o</span>: Feitas altera&ccedil;&otilde;es nos templates <span class="location">[index.tpl.php, panel[LOGGED].ajax.php, paneluser.pag.php, paneluser[REFERENCE_LINK].pag.php, paneladmin.pag.php, paneladmin[SHOW_REFERENCE].pag.php, paneladmin[RESET_REFERENCE].pag.php, banneds[ACCOUNTS].pag.php, banneds[CHARACTERS].pag.php]</span>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0F89E7CF9</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0F89E7CF9</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.8.1 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.8.1 Finish Edition</legend>
+<pre> -- Fixado erro do repetimento de nomes das moedas na barra lateral <span class="location">[panel[LOGGED].ajax.php]</span>
+ -- Fixado bug do RF ao alterar classe <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Fixado bug do sorteio via CronJob  <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado campo para alterar a moeda a ser sorteada no CronJob <span class="location">[CTM_PanelAdmin.class.php]</span>
+ -- Adicionado trava para visualizar perfil dos personagens e das guilds <span class="location">[CTM_Search.class.php]</span>
+ -- Removido a op&ccedil;&atilde;o de reparar ba&uacute; por medidas de seguran&ccedil;a <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Removido a op&ccedil;&atilde;o de reparar invent&aacute;rio por medidas de seguran&ccedil;a <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Substituido a tag "{Castle_Siege}" pelo c&oacute;digo original da imagem do Castle Siege <span class="location">[CTM_Home.class.php, home.pag.php]</span>
+ 
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.8.1_Update');" /> 
+</pre>
+  <div id="v1.8.1_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    -- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">define("RANKING_HERO_COLUMN", "HeroCountWeb"); // -- Coluna do Ranking de PK (Padrão -> HeroCountWeb)</pre>
+    -- Adicione abaixo:
+    <pre id="quote">define("ENABLE_INFO_CHAR", TRUE); // -- Habilitar a exibição de perfil dos personagens (Padrão -> TRUE)
+define("ENABLE_INFO_GUILD", TRUE); // -- Habilitar a exibição de perfil das guilds (Padrão -> TRUE)</pre>
+	-- Remova a linha:
+    <pre id="quote">$_Panel["Account"]["Repair_Vault"] = array(1 /* Ativado */,1 /* Free */,1 /* VIP 1 */,1 /* VIP 2 */,1 /* VIP 3 */,1 /* VIP 4 */,1 /* VIP 5 */); // -- Alterar Baú</pre>
+    -- Remova a linha:
+    <pre id="quote">$_Panel["Char"]["Repair_Inventory"] = array(1 /* Ativado */,0 /* Free */,0 /* VIP 1 */,1 /* VIP 2 */,1 /* VIP 3 */,1 /* VIP 4 */,1 /* VIP 5 */); // -- Reparar Inventório</pre>
+	-- <span style="color: #F00;">Aten&ccedil;&atilde;o</span>: Feitas altera&ccedil;&otilde;es nos templates <span class="location">[panel[LOGGED].ajax.php, paneluser.pag.php, paneluser[CHAR_DIV].pag.php, paneladmin[EDIT_CRONTAB].pag.php, home.pag.php]</span>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0705E7A7F</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0705E7A7F</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.8.2 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.8.2 Finish Edition</legend>
+<pre> -- Fixado bug do sistema de licen&ccedil;a <span class="location">[classes/]</span></pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x0A85C3A70</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x0A85C3A70</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.8.3 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.8.3 Finish Edition</legend>
+<pre> -- Fixado erro de visualiza&ccedil;&atilde;o da estrutura dos templates</span>
+ -- Sistema de licen&ccedil;a refeito <span class="location">[modules/, modules/core/license/]</span>
+ -- Sistema de verifica&ccedil;&atilde;o de update refeito <span class="location">[version.class.php]</span>
+ -- Estrutura das classes e de todo o sistema refeita <span class="location">[index.php, load.inc.php, classes/]</span>
+ -- Estrutura melhor otimizada (melhor desempenho) <span class="location">[index.php, load.inc.php, classes/]</span>
+ -- Removida a classe &quot;CTM_Engine.class.php&quot; <span class="location">[CTM_Engine.class.php]</span>
+ -- Removida a classe &quot;CTM_cURL.class.php&quot; <span class="location">[CTM_cURL.class.php]</span>
+ -- Removido o arquivo de licen&ccedil;a &quot;Core_License.txt&quot; <span class="location">[Core_License.txt]</span>
+ 
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.8.3_Update');" /> 
+</pre>
+  <div id="v1.8.3_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    -- Atualize o arquivo <span class="location">index.php</span>, <span class="location">modules/load.inc.php</span>, <span class="location">modules/classes/</span><br />
+    -- Remova os arquivos <span class="location">modules/classes/CTM_Engine.class.php</span>, <span class="location">modules/classes/CTM_cURL.class.php</span> e <span class="location">modules/core/Core_License.txt</span><br />
+    -- Crie a pasta <span class="location">license</span> em <span class="location">modules/core/</span><br />
+    -- Ative seu serial de licen&ccedil;a <span class="location">(obtenha aqui: <a href="http://license.ctmts.com.br/keys/" target="_blank">http://license.ctmts.com.br/keys/</a>)</span><br />
+	-- <span style="color: #F00;">Aten&ccedil;&atilde;o</span>: Se voc&ecirc; est&aacute; em uma vers&atilde;o abaixo da 1.8.2, efetue as atualiza&ccedil;&otilde;es em ordem.</span>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x84216234</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x84216234</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.8.4 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.8.4 Finish Edition</legend>
+<pre>
+ -- Sistema de licen&ccedil;a atualizado <span class="location">[modules/, modules/core/license/]</span>
+ -- Fixado erro na op&ccedil;&atilde;o de Limpar Personagem <span class="location">[CTM_PanelUser.class.php]</span>
+ -- Adicionado registro de logs no painel do usu&aacute;rio <span class="location">[CTM_PanelUser.class.php]</span><span class="location"></span>
+ 
+<input type="button" value="Continua&ccedil;&atilde;o da Atualiza&ccedil;&atilde;o" onclick="javascript: Element_Hidden('v1.8.4_Update');" /> 
+</pre>
+  <div id="v1.8.4_Update" style="display: none;">
+	<div style="border: 1px solid ;">
+    -- Procure no <span class="location">Settings.php</span> pela Linha:
+    <pre id="quote">define("ENABLE_INFO_GUILD", TRUE); // -- Habilitar a exibição de perfil das guilds (Padrão -> TRUE)</pre>
+    -- Adicione abaixo:
+    <pre id="quote">define("ENABLE_PANELUSER_LOGS", TRUE); // -- Habilitar o registro de logs do painel do usuário [modules/Logs/CTM_PanelUser] (Padrão -> TRUE)</pre>
+    -- Atualize o arquivo <span class="location">index.php</span>, <span class="location">modules/load.inc.php</span>, <span class="location">modules/classes/</span><br />
+    -- Remova os arquivos (caso existem) <span class="location">modules/core/license/license.dat</span> e <span class="location">modules/core/license/license.cache.ini</span><br />
+    -- Crie a pasta <span class="location">CTM_PanelUser</span> em <span class="location">modules/Logs/</span><br />
+    -- Ative seu serial de licen&ccedil;a <span class="location">(obtenha aqui: <a href="http://keys.ctmts.com.br/effectweb/" target="_blank">http://keys.ctmts.com.br/effectweb/</a>)</span><br />
+	-- <span style="color: #F00;">Aten&ccedil;&atilde;o</span>: Se voc&ecirc; est&aacute; em uma vers&atilde;o abaixo da 1.8.3, efetue as atualiza&ccedil;&otilde;es em ordem.</span><br />
+    -- <span style="color: #F00;">Aten&ccedil;&atilde;o</span>: N&atilde;o h&aacute; atualiza&ccedil;&otilde;es nos templates nesta vers&atilde;o.</span>
+    </div>
+</div>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x1A45F797</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x1A45F797</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+</fieldset>
+<!------------------------------ v1.8.5 Finish Edition ------------------------------>
+<fieldset>
+<legend>v1.8.5 Finish Edition</legend>
+<pre> -- Fixado bug dos pontos do reset tabelado <span class="location">[modules/classes/CTM_PanerlUser.class.php]</span><br /> -- Alterado os hosts do sistema de licen&ccedil;a (ambas as localidades se encontram no EUA) <span class="location">[modules/classes/]</span>
+ -- Fixado problema dos collations nas querys de instala&ccedil;&atilde;o <span class="location">[modules/SQL_Scripts/]</span></pre>
+<blockquote id="update_key">
+Altere no Settings.php a Chave de Update para: <key>0x6D42C701</key><br />
+Exemplo de como irá ficar: <string>define</string><quote>(</quote><value>&quot;Update_Key&quot;</value><font color="#000">,</font><num>0x6D42C701</num><quote>)</quote><font color="#000">;</font> <comment>// -- Chave de Atualização. (Pegue no ChangeLog.htm)</comment>
+</blockquote>
+<!------------------------------ Effect Web Update List ------------------------------>
+<fieldset>
+<legend>Proximas Atualizações</legend>
+<pre>
+ -- Próxima Serie: Effect Web v2.x</pre>
+</fieldset>
+</body>
+</html>
