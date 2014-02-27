@@ -1,7 +1,7 @@
 Effect Web v1.8.5 Finish Edition
 ================
 
-Código fonte da Effect Web v1.8.4 liberado somente para os clientes.
+Código fonte da Effect Web v1.8.5 liberado somente para os clientes.
 Estes códigos são privados de uso pessoal dos clientes.
 Todos as classes e códigos referente a checagem de licença foram removidos.
 
