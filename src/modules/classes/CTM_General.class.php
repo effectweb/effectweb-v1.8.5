@@ -30,9 +30,6 @@ class CTM_General extends CTM_MSSQL
 	protected function init()
 	{
 		global $CTM_Template, $CTM_Pages, $CTM, $_RaffleSystem, $_Panel, $controller;
-
-		if($controller->isRealFile("e7de44a335e6c6914b268cac3ec16478") != "50e07eb83c287064d136aea9a7265dc9")
-			exit("Files corrupted.");
 		
 		$this->Logout_Command();
 		$CTM_Header = new CTM_Header();
