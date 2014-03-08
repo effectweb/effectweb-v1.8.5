@@ -29,7 +29,7 @@ class CTM_General extends CTM_MSSQL
 	}
 	protected function init()
 	{
-		global $CTM_Template, $CTM_Pages, $CTM, $_RaffleSystem, $_Panel, $controller;
+		global $CTM_Template, $CTM_Pages, $CTM, $_RaffleSystem, $_Panel, $version;
 		
 		$this->Logout_Command();
 		$CTM_Header = new CTM_Header();
@@ -47,8 +47,8 @@ class CTM_General extends CTM_MSSQL
 		****************************************************/
 		$CTM_Template->Set("Server_Name", Server_Name);
 		$CTM_Template->Set("%TITLE_WEB%", Web_Title);
-		$CTM_Template->Set("Web_Version", $controller->version->getVersion("full"));
-		$CTM_Template->Set("Footer", "Effect Web ".$controller->version->getVersion("full"));
+		$CTM_Template->Set("Web_Version", $version->getVersion("full"));
+		$CTM_Template->Set("Footer", "Effect Web ".$version->getVersion("full"));
 		$CTM_Template->Set("Div#Panel", "<script>CTM_Load('?ajax=panel','Panel','GET');</script>");
 		$CTM_Template->Set("Server_List", "<script>CTM_Load('?ajax=servers','Servers','GET');</script>");
 		$CTM_Template->Set("Web_Poll", "<script>CTM_Load('?ajax=poll','Web_Poll','GET');</script>");
