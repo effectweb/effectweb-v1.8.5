@@ -83,53 +83,12 @@
     <td><b>{EffectWeb_Version}</b></td>
   </tr>
   <tr>
-    <td>Vers&atilde;o Recente:</td>
-    <td><b>{EffectWeb_Update}</b></td>
-  </tr>
-  <tr>
     <td>Desenvolvedor:</td>
     <td><b class="red">{Developer_Name}</b></td>
   </tr>
-  <tr>
-    <td>Titular da Licen&ccedil;a:</td>
-    <td><b>{EffectWeb_Holder}</b></td>
-  </tr>
-  <tr>
-    <td>Dom&iacute;nio Licenciado:</td>
-    <td><b><a href="javascript: void(EffectWeb);" onclick="Serial();return false;">{EffectWeb_Domain}</a></b></td>
-  </tr>
-  <tr>
-    <td>Tipo de Licen&ccedil;a:</td>
-    <td><b>{EffectWeb_License}</b></td>
-  </tr>
-  <tr>
-    <td>Vencimento:</td>
-    <td><b>{EffectWeb_Expiration}</b></td>
-  </tr>
   </table>
-  <br />
-  <strong class="colr">Contato com o Desenvolvedor:</strong><br />
-  <br />
-  <table width="400" border="0" style="font-size: 12px;">
-  <tr>
-    <td>E-Mail/MSN:</td>
-    <td><b>{Developer_Mail}</b></td>
-  </tr>
-  <tr>
-    <td>Skype:</td>
-    <td><b>{Developer_Skype}</b></td>
-  </tr>
-  <tr>
-    <td>Telefone:</td>
-    <td><b>{Developer_Phone}</b></td>
-  </tr>
-  <tr>
-    <td width="205">Site:</td>
-    <td width="337"><b><a target="_blank" href="http://{Developer_Page}">{Developer_Page}</a></b></td>
-  </tr>
-</table>
 <br />
-<input type="button" value="ChangeLog da Web" onclick="window.open('http://changelog.ctmts.com.br/?id=03', 'windowname1'); return false;">
+<input type="button" value="ChangeLog da Web" onclick="window.open('ChangeLog.htm', 'windowname1'); return false;">
     </div>
   </div>
 </div>
