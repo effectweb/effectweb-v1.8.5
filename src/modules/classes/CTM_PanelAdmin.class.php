@@ -41,17 +41,14 @@ class CTM_PanelAdmin extends CTM_MSSQL
 			$CTM_Template->Load($CTMT."paneladmin[SYNCHRONIZE].pag.php");
 			break;
 			case "ADD_CRONTAB" :
-			$CTM_General->License_Limit(2);
 			$this->Add_CronbTab();
 			$CTM_Template->Load($CTMT."paneladmin[ADD_CRONTAB].pag.php");
 			break;
 			case "MANAGE_CRONTAB" :
-			$CTM_General->License_Limit(2);
 			$this->List_CronTab();
 			$CTM_Template->Load($CTMT."paneladmin[MANAGE_CRONTAB].pag.php");
 			break;
 			case "EDIT_CRONTAB" :
-			$CTM_General->License_Limit(2);
 			$this->Manage_CronTab();
 			$CTM_Template->Load($CTMT."paneladmin[EDIT_CRONTAB].pag.php");
 			break;
@@ -200,13 +197,11 @@ class CTM_PanelAdmin extends CTM_MSSQL
 			$CTM_Template->Load($CTMT."paneladmin[RESET_REFERENCE].pag.php");
 			break;
 			case "TICKETS" :
-			$CTM_General->License_Limit(2);
 			$this->Privilegy($_PanelAdmin["Tickets"]);
 			$this->List_Tickets();
 			$CTM_Template->Load($CTMT."paneladmin[TICKETS].pag.php");
 			break;
 			case "VIEW_TICKET" :
-			$CTM_General->License_Limit(2);
 			$this->Privilegy($_PanelAdmin["Tickets"]);
 			$this->Suportt_Tickets();
 			$CTM_Template->Load($CTMT."paneladmin[VIEW_TICKET].pag.php");
@@ -253,7 +248,6 @@ class CTM_PanelAdmin extends CTM_MSSQL
 			$CTM_Template->Load($CTMT."paneladmin[DELETE_CASH].pag.php");
 			break;
 			case "SQL_BACKUP" :
-			$CTM_General->License_Limit(2);
 			$this->Privilegy($_PanelAdmin["SQL"]);
 			$this->SQL_Backup();
 			$CTM_Template->Load($CTMT."paneladmin[SQL_BACKUP].pag.php");
@@ -342,14 +336,8 @@ class CTM_PanelAdmin extends CTM_MSSQL
 	}
 	private function Home()
 	{
-		global $CTM_General, $CTM_Template, $controller;
+		global $CTM_General, $CTM_Template, $version;
 		echo("<script type=\"text/javascript\" src=\"modules/javascripts/SpryTabbedPanels.js\"></script>
-		<script type=\"text/javascript\">
-		function Serial() 
-		{
-			Sexy.info('<span class=\"h1\"> Serial de Licen&ccedil;a</span><br /><br />".$CTM_General->WebSite_Information(2)."');
-		}
-		</script>
 		<style type=\"text/css\"> @import url('modules/css/SpryTabbedPanels.css'); </style>\n\r");
 		
 		if(@Status_Enable == true)
@@ -379,17 +367,10 @@ class CTM_PanelAdmin extends CTM_MSSQL
 		$CTM_Template->Set("Info_Acc-Ban", $Info["Acc_Ban"][0]);
 		$CTM_Template->Set("Info_Status", $Info["Status"]);
 		$CTM_Template->Set("EffectWeb_Name", constant("Product"));
-		$CTM_Template->Set("EffectWeb_Version", $controller->version->getVersion("full"));
+		$CTM_Template->Set("EffectWeb_Version", $version->getVersion("full"));
 		$CTM_Template->Set("EffectWeb_Update", $CTM_General->WebSite_Information(4));
 		$CTM_Template->Set("EffectWeb_Holder",$CTM_General->WebSite_Information(5));
-		$CTM_Template->Set("EffectWeb_Domain", $controller->getServerInfo("address"));
-		$CTM_Template->Set("EffectWeb_License", $CTM_General->WebSite_Information(3));
-		$CTM_Template->Set("EffectWeb_Expiration", $CTM_General->WebSite_Information(1));
 		$CTM_Template->Set("Developer_Name", "Erick-Master");
-		$CTM_Template->Set("Developer_Mail", "erick-master@ctmts.com.br");
-		$CTM_Template->Set("Developer_Skype", "erick-master.am");
-		$CTM_Template->Set("Developer_Phone", "(31) 9702-2076");
-		$CTM_Template->Set("Developer_Page", "www.ctmts.com.br");
 	}
 	private function Synchronize_DB()
 	{
