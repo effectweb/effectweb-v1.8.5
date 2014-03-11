@@ -368,8 +368,6 @@ class CTM_PanelAdmin extends CTM_MSSQL
 		$CTM_Template->Set("Info_Status", $Info["Status"]);
 		$CTM_Template->Set("EffectWeb_Name", constant("Product"));
 		$CTM_Template->Set("EffectWeb_Version", $version->getVersion("full"));
-		$CTM_Template->Set("EffectWeb_Update", $CTM_General->WebSite_Information(4));
-		$CTM_Template->Set("EffectWeb_Holder",$CTM_General->WebSite_Information(5));
 		$CTM_Template->Set("Developer_Name", "Erick-Master");
 	}
 	private function Synchronize_DB()
