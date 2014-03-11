@@ -105,21 +105,18 @@ class CTM_PanelUser extends CTM_MSSQL
 			$CTM_Template->Load($CTMT."paneluser[DELETE_SCREEN].pag.php");
 			break;
 			/*case "PM_ENTER" :
-			$CTM_General->License_Limit(1);
 			$this->OptionEnable($_Panel["Account"]["PM_System"]);
 			$this->Privilegy($_Panel["Account"]["PM_System"]);
 			$this->PM_Enter();
 			$CTM_Template->Load($CTMT."paneluser[PM_ENTER].pag.php");
 			break;
 			case "PM_EXIT" :
-			$CTM_General->License_Limit(1);
 			$this->OptionEnable($_Panel["Account"]["PM_System"]);
 			$this->Privilegy($_Panel["Account"]["PM_System"]);
 			$this->PM_Exit();
 			$CTM_Template->Load($CTMT."paneluser[PM_EXIT].pag.php");
 			break;
 			case "READ_PM" :
-			$CTM_General->License_Limit(1);
 			$this->OptionEnable($_Panel["Account"]["PM_System"]);
 			$this->Privilegy($_Panel["Account"]["PM_System"]);
 			$this->ConnectStat();
@@ -127,7 +124,6 @@ class CTM_PanelUser extends CTM_MSSQL
 			$CTM_Template->Load($CTMT."paneluser[READ_PM].pag.php");
 			break;
 			case "SEND_PM" :
-			$CTM_General->License_Limit(1);
 			$this->OptionEnable($_Panel["Account"]["PM_System"]);
 			$this->Privilegy($_Panel["Account"]["PM_System"]);
 			$this->ConnectStat();
@@ -154,7 +150,6 @@ class CTM_PanelUser extends CTM_MSSQL
 			$CTM_Template->Load($CTMT."paneluser[RESET_CHAR].pag.php");
 			break;
 			case "MASTER_RESET" :
-			$CTM_General->License_Limit(1);
 			$this->OptionEnable($_Panel["Char"]["MReset"]);
 			$this->Privilegy($_Panel["Char"]["MReset"]);
 			$this->CheckCharSelected();
@@ -163,7 +158,6 @@ class CTM_PanelUser extends CTM_MSSQL
 			$CTM_Template->Load($CTMT."paneluser[MASTER_RESET].pag.php");
 			break;
 			case "TRANSFER_RESETS" :
-			$CTM_General->License_Limit(1);
 			$this->OptionEnable($_Panel["Char"]["Transfer_Resets"]);
 			$this->Privilegy($_Panel["Char"]["Transfer_Resets"]);
 			$this->CheckCharSelected();
@@ -172,7 +166,6 @@ class CTM_PanelUser extends CTM_MSSQL
 			$CTM_Template->Load($CTMT."paneluser[TRANSFER_RESETS].pag.php");
 			break;
 			case "TRADE_RCASH" :
-			$CTM_General->License_Limit(1);
 			$this->OptionEnable($_Panel["Char"]["Trade_RCash"]);
 			$this->Privilegy($_Panel["Char"]["Trade_RCash"]);
 			$this->CheckCharSelected();
@@ -189,7 +182,6 @@ class CTM_PanelUser extends CTM_MSSQL
 			$CTM_Template->Load($CTMT."paneluser[CLEAR_PK].pag.php");
 			break;
 			case "CHANGE_CLASS" :
-			$CTM_General->License_Limit(1);
 			$this->OptionEnable($_Panel["Char"]["Change_Class"]);
 			$this->Privilegy($_Panel["Char"]["Change_Class"]);
 			$this->CheckCharSelected();
@@ -214,7 +206,6 @@ class CTM_PanelUser extends CTM_MSSQL
 			$CTM_Template->Load($CTMT."paneluser[MOVE_CHAR].pag.php");
 			break;
 			case "PROFILE_CHAR" :
-			$CTM_General->License_Limit(1);
 			$this->OptionEnable($_Panel["Char"]["Profile_Char"]);
 			$this->Privilegy($_Panel["Char"]["Profile_Char"]);
 			$this->CheckCharSelected();
@@ -223,7 +214,6 @@ class CTM_PanelUser extends CTM_MSSQL
 			$CTM_Template->Load($CTMT."paneluser[PROFILE_CHAR].pag.php");
 			break;
 			case "UPLOAD_IMG" :
-			$CTM_General->License_Limit(1);
 			$this->OptionEnable($_Panel["Char"]["Upload_Img"]);
 			$this->Privilegy($_Panel["Char"]["Upload_Img"]);
 			$this->CheckCharSelected();
@@ -277,13 +267,11 @@ class CTM_PanelUser extends CTM_MSSQL
 			exit("<script>CTM_Load('?pag=paneluser','conteudo','GET');</script>");
 			break;
 			case "TICKETS" :
-			$CTM_General->License_Limit(1);
 			$this->OptionEnable($_Panel["Suportt"]["Tickets"]);
 			$this->Open_Ticket();
 			$CTM_Template->Load($CTMT."paneluser[TICKETS].pag.php");
 			break;
 			case "VIEW_TICKET" :
-			$CTM_General->License_Limit(1);
 			$this->OptionEnable($_Panel["Suportt"]["Tickets"]);
 			$this->Resp_Ticket();
 			$CTM_Template->Load($CTMT."paneluser[VIEW_TICKET].pag.php");
@@ -587,7 +575,7 @@ class CTM_PanelUser extends CTM_MSSQL
 	}
 	private function WriteLog($log, $text = FALSE)
 	{
-		global $controller, $_Panel;
+		global $version, $_Panel;
 		
 		if(ENABLE_PANELUSER_LOGS == TRUE)
 		{
@@ -706,7 +694,7 @@ class CTM_PanelUser extends CTM_MSSQL
 			if(!file_exists("modules/Logs/CTM_PanelUser/".date("d-m-Y").".htm"))
 			{
 				$begin = "*******************************************<br />\r\n";
-				$begin .= "* Effect Web ".$controller->version->getVersion("full")."<br />\r\n";
+				$begin .= "* Effect Web ".$version->getVersion("full")."<br />\r\n";
 				$begin .= "* Painel de Controle (User)<br />\r\n";
 				$begin .= "* Powered by Erick-Master<br />\r\n";
 				$begin .= "* CTM Teaa Softwares<br />\r\n";
