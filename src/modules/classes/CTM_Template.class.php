@@ -47,7 +47,7 @@ final class CTM_Template
 	}
 	public function Show()
 	{
-		global $controller;
+		global $version;
 
 		foreach($this->Tags as $TPL_Tags)
 		{
@@ -55,7 +55,7 @@ final class CTM_Template
 		}
 		
 		eval("?>".$this->Read_File."<?");
-		echo("\r\n"."<!-- Effect Web ".$controller->version->getVersion("full")." | Powered by Erick-Master - CTM TEAM Softwares -->");
+		echo("\r\n"."<!-- Effect Web ".$version->getVersion("full")." | Powered by Erick-Master - CTM TEAM Softwares -->");
 	}
 	public function TPL_Modules()
 	{
@@ -85,30 +85,27 @@ final class CTM_Template
 		
 		if($_GET["tpl"] == TRUE)
 		{
-			if($controller->isTrial() == false)
-			{
-				$Set_Template = pack("H*", $_GET["tpl"]);
+			$Set_Template = pack("H*", $_GET["tpl"]);
 			
-				if($Set_Template == "TPL_Default")
-				{
-					setcookie("Web_Template", NULL);
-					echo("<script>window.location='?';</script>");
-				}
-				/*elseif(in_array($Set_Template, $_Templates) == FALSE)
-				{
-					setcookie("Web_Template", NULL);
-					echo("<script>window.alert('Template Invalido, aguarde...'); window.location='?';</script>");
-				}*/
-				elseif(file_exists("templates/".$Set_Template."/index.tpl.php") == FALSE)
-				{
-					setcookie("Web_Template", NULL);
-					echo("<script>window.alert('Template Invalido, aguarde...'); window.location='?';</script>");
-				}
-				else
-				{
-					setcookie("Web_Template", bin2hex($Set_Template), time() + (1 * 24 * 60 * 60));
-					exit("<script>window.location='?';</script>");
-				}
+			if($Set_Template == "TPL_Default")
+			{
+				setcookie("Web_Template", NULL);
+				echo("<script>window.location='?';</script>");
+			}
+			/*elseif(in_array($Set_Template, $_Templates) == FALSE)
+			{
+				setcookie("Web_Template", NULL);
+				echo("<script>window.alert('Template Invalido, aguarde...'); window.location='?';</script>");
+			}*/
+			elseif(file_exists("templates/".$Set_Template."/index.tpl.php") == FALSE)
+			{
+				setcookie("Web_Template", NULL);
+				echo("<script>window.alert('Template Invalido, aguarde...'); window.location='?';</script>");
+			}
+			else
+			{
+				setcookie("Web_Template", bin2hex($Set_Template), time() + (1 * 24 * 60 * 60));
+				exit("<script>window.location='?';</script>");
 			}
 		}
 	}
