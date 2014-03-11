@@ -327,8 +327,6 @@ class CTM_Register extends CTM_MSSQL
 	}
 	private function useItemScript()
 	{
-		global $controller;
-		
 		if(!file_exists("modules/core/Core_Register.txt")) return FALSE;
 		
 		$itemFile = file_get_contents("modules/core/Core_Register.txt");
@@ -342,7 +340,7 @@ class CTM_Register extends CTM_MSSQL
 		$this->itemScript['LICENSE'] = $itemScriptData['LICENSE'];
 		$this->itemScript['OPTIONS'] = $itemScriptData['OPTIONS'];
 		
-		return $controller->getLicenseInfo("license", "serial") == $this->itemScript['LICENSE'];
+		return true;
 	}
 	private function itemScript($option)
 	{
