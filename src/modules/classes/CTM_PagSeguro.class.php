@@ -76,12 +76,7 @@ class CTM_PagSeguro extends CTM_MSSQL
 	*/
 	public function CheckModule()
 	{
-		global $controller;
-		$serial = $controller->getLicenseInfo("license", "serial");
-		
 		if($this->settings['API_KEY'] != $this->API_Key)
-			return FALSE;
-		if($this->license != $serial)
 			return FALSE;
 		
 		return TRUE;
