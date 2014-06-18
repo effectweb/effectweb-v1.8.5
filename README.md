@@ -18,3 +18,7 @@ Assim como o projeto, a CTM Team, agora Cetemaster, não possui mais qualquer v�
 
 Atenciosamente,
 CTM Team Softwares
+
+==================
+
+Para adquirir a permissão de uso destes arquivos entre em contato com a www.xteamservers.com (Skype: xteam.servers)
