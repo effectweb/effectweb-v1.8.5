@@ -138,18 +138,11 @@ class CTM_General extends CTM_MSSQL
 		/***************************************************
 			@ Template Selector
 		****************************************************/
-		if($this->License_Limit(3) == "PREMIUM")
-		{
-			$CTM_Template->Set("Template_Selector", Template_Selector == TRUE ? "<form name=\"Select_Template\" id=\"Select_Template\">
+		$CTM_Template->Set("Template_Selector", Template_Selector == TRUE ? "<form name=\"Select_Template\" id=\"Select_Template\">
         <strong class=\"colr\" style=\"font-size: 12px;\">Template: </strong>\n<select name=\"Template\" id=\"Template\" onchange=\"window.location='?tpl='+document.getElementById('Template').value\">
 		".$CTM_Header->Template_Selector()."
 		</select>
         </form>" : NULL);
-		}
-		else
-		{
-			$CTM_Template->Set("Template_Selector", NULL);
-		}
 		
 		/***************************************************
 			@ Command New License
