@@ -154,7 +154,7 @@ class CTM_Ranking extends CTM_MSSQL
 		if($_GET["cmd"] == TRUE)
 		{
 			$Ranking = $_POST["Ranking"];
-			$Top_Rank = $_POST["Top_Rank"];
+			$Top_Rank = intval($_POST["Top_Rank"]);
 			
 			if(empty($Ranking))
 			{
@@ -163,6 +163,10 @@ class CTM_Ranking extends CTM_MSSQL
 			elseif(empty($Top_Rank))
 			{
 				exit("<div class=\"warning-box\"> Selecione o Top Ranking</div>");
+			}
+			elseif(!array_search($_POST["Top_Rank"], $_Ranking['Gerator']['TOP']))
+			{
+				exit("<div class=\"error-box\"> Selecione um Top Ranking correto</div>");
 			}
 			else
 			{
