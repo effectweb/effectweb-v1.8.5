@@ -2246,7 +2246,7 @@ class CTM_PanelUser extends CTM_MSSQL
 		
 		if($_GET["cmd"] == TRUE)
 		{
-			$Class = $_POST["Class"];
+			$Class = (int) $_POST["Class"];
 			
 			if($Find_Char[0] == $Class)
 			{
